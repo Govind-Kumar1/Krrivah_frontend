@@ -10,7 +10,7 @@ const slides = [
 		brand: 'INNARA',
 	},
 	{
-		image: '/SCENE 17.png',
+		image: '/SCENE 17.png', 
 		title: 'DESIGNED FOR YOU',
 		description:
 			'Experience a new dimension of comfort and style with our bespoke villas, where every detail is crafted for your unique lifestyle.',
