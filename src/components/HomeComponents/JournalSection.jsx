@@ -29,14 +29,14 @@ const posts = [
 
 const JournalSection = () => {
   return (
-    <section className="bg-[#EAEDE5] w-full py-12 px-6 md:px-16">
+    <section className="bg-[#EAEDE5] w-full py-24 px-6 md:px-16">
       <div className="flex flex-col lg:flex-row gap-10 lg:gap-20 items-start">
         {/* Left Title */}
         <div className="flex-1">
-          <p className="text-sm gap-40 text-gray-600 font-medium mb-40 uppercase tracking-widest">
+          <p className="text-[18px] gap-40 text-gray-600 font-medium mb-40 uppercase tracking-widest">
             Journal
           </p>
-          <h2 className="text-[44px] font-serif leading-[1.2] text-[#1d1f1d] mb-12">
+          <h2 className="text-[56px] font-serif leading-[1.2] text-[#1d1f1d] mb-12">
             BEYOND <br /> BLUEPRINTS.
           </h2>
           <button className="flex items-center gap-14 text-sm font-semibold uppercase tracking-wider ">
@@ -52,7 +52,7 @@ const JournalSection = () => {
           {posts.map((post, index) => (
             <div
               key={index}
-              className="bg-white rounded-md overflow-hidden shadow-sm w-[300px] h-[450px] flex flex-col"
+              className="bg-white  overflow-hidden shadow-sm w-[300px] h-[450px] flex flex-col"
             >
               <img
                 src={post.image}

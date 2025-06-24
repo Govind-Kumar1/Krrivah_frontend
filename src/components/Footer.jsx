@@ -5,19 +5,19 @@ const Footer = () => {
   return (
     <footer className="w-full bg-white border-t border-gray-100">
       {/* Top Row */}
-      <div className="flex flex-col md:flex-row justify-between items-center  md:px-4 py-6">
+      <div className="flex flex-col md:flex-row justify-between items-center  md:px-8 py-6 ">
         {/* Logo */}
-        <div className="flex items-center  mb-4 md:mb-0">
+        <div className="flex items-center  mb-4 md:mb-0 ">
           <img
             src="/Logo.png" // Replace with your logo icon path
             alt="Krrivah Logo"
-            className="h-30 w-32 object-contain"
+            className="h-30 w-40 object-contain "
           />
-          <span className="font-semibold text-lg tracking-wide">KRRIVAH</span>
+          <span className="font-semibold text-[22px] -ml-20 ">KRRIVAH</span>
         </div>
 
         {/* Nav Links */}
-        <ul className="flex flex-wrap justify-center gap-6 text-sm font-semibold tracking-wider text-black">
+        <ul className="flex flex-wrap justify-center gap-10 md:gap-26 text-sm font-semibold tracking-wider text-black">
           <li className="hover:text-gray-600 cursor-pointer">ABOUT</li>
           <li className="hover:text-gray-600 cursor-pointer">PROJECTS</li>
           <li className="hover:text-gray-600 cursor-pointer">DESIGN</li>
