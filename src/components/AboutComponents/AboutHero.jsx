@@ -15,9 +15,10 @@ const AboutHero = () => {
       <div className="relative z-10 w-full max-w-[1600px] mx-auto px-6 md:px-20 flex flex-col md:flex-row justify-between items-end h-full pb-24">
         
         {/* Left Text */}
-        <div className="text-white max-w-[600px]">
-          <h1 className="text-[48px] md:text-[64px] leading-tight font-serif">
-            WHERE STORIES <br /> FIND THEIR SPACE 
+        <div className="text-white max-w-[800px]">
+          <h1 className="text-[48px] md:text-[80px] leading-tight font-serif">
+            WHERE STORIES <br />
+            FIND THEIR SPACE
           </h1>
         </div>
 

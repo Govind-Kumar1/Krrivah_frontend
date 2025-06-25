@@ -2,7 +2,7 @@ import React from "react";
 
 const OurRoots = () => {
   return (
-    <section className="bg-[#EAE8E5] w-full px-6 md:px-16 py-20">
+    <section className="bg-[#EAE8E5] w-full px-6 md:px-10 py-20">
       <div className="max-w-[1500px] mx-auto flex flex-col lg:flex-row gap-12 items-start">
         
         {/* Left Content */}
@@ -10,31 +10,31 @@ const OurRoots = () => {
           <p className="text-sm uppercase tracking-wide text-gray-700 mb-4">
             Our Roots
           </p>
-          <h2 className="text-[44px] md:text-[52px] leading-tight font-serif text-[#2B2B2B] mb-6">
+          <h2 className="text-[44px] md:text-[58px] leading-tight font-serif text-[#2B2B2B] mb-12">
             THE STORY <br /> BEHIND <br /> KRRIVAH
           </h2>
-          <p className="text-sm font-semibold text-[#2B2B2B] mb-3">
+          <p className="text-sm font-semibold text-[#2B2B2B] mb-14">
             Krrivah is more than a real estate venture — it’s a philosophy of thoughtful living.
           </p>
-          <p className="text-[15px] text-gray-700 leading-relaxed mb-6 max-w-md">
+          <p className="text-[15px] text-gray-700 leading-relaxed mb-3 max-w-md">
             Born from the desire to blend conscious design with purposeful development, Krrivah crafts spaces that respect land, elevate lifestyle, and build long-term value. With deep roots in South India’s cultural and architectural heritage, we strive to create environments where every brick tells a story — of craft, community, and care.
           </p>
-          <button className="px-5 py-2 bg-white text-black text-sm font-semibold rounded-full hover:shadow-md transition-all">
+          <button className="px-5 py-2 mt-6 bg-white text-black text-sm font-semibold rounded-full hover:shadow-md transition-all">
             GET IN TOUCH
           </button>
         </div>
 
         {/* Right Content with image layering */}
-        <div className="relative flex-1 w-full h-auto">
+        <div className="relative  w-[708px] h-[760px]  ">
           <img
-            src="/SCENE-BG.png" // Background B&W aerial image
+            src="/SCENE 16.png" // Background B&W aerial image
             alt="Background"
-            className="w-full rounded-md"
+            className="w-full h-full  filter grayscale"
           />
           <img
-            src="/SCENE-INTERIOR.png" // Foreground couch window scene
+            src="/SCENE 3.png" // Foreground couch window scene
             alt="Interior"
-            className="absolute top-[30%] left-[20%] w-[300px] h-auto rounded shadow-lg"
+            className="absolute  top-[25%] -left-[20%] w-[350px] h-[400px] shadow-lg"
           />
         </div>
       </div>
@@ -62,7 +62,7 @@ const OurRoots = () => {
         ].map((item, idx) => (
           <div
             key={idx}
-            className="bg-white border border-gray-200 rounded-md p-6 text-center"
+            className="bg-[#EAE8E5] border border-zinc-400  p-6 text-center h-[180px] "
           >
             <div className="text-[36px] font-serif text-[#2B2B2B] mb-2">
               {item.title}
