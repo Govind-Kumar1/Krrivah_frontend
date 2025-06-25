@@ -69,7 +69,7 @@ const FeaturedProjects = () => {
       {/* Carousel */}
       <div className="relative flex items-end gap-40 justify-center">
         {/* Previous Project (Left) */}
-        <div className="w-[420px] h-[600px]  relative   overflow-hidden shadow-md hidden lg:block">
+        <div className="w-[420px] h-[660px]  relative   overflow-hidden shadow-md hidden lg:block">
           <img
             src={
               projects[(current - 1 + projects.length) % projects.length].image
@@ -96,7 +96,7 @@ const FeaturedProjects = () => {
         {/* Current Project (Center) */}
         <div className="w-[600px] h-[700px] flex flex-col items-stretch overflow-hidden shadow-lg bg-white">
           {/* Image with overlay */}
-          <div className="relative w-full h-[560px]">
+          <div className="relative w-full h-[660px]">
             <img
               src={projects[current].image}
               alt={projects[current].title}
@@ -136,7 +136,7 @@ const FeaturedProjects = () => {
         </div>
 
         {/* Next Project (Right) */}
-        <div className="w-[420px] h-[600px] overflow-hidden shadow-md hidden lg:block">
+        <div className="w-[420px] h-[660px] overflow-hidden shadow-md hidden lg:block">
           <img
             src={projects[(current + 1) % projects.length].image}
             alt="Project Right"
