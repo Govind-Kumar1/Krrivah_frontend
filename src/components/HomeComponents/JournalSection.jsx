@@ -39,7 +39,7 @@ const JournalSection = () => {
           <h2 className="text-[56px] font-serif leading-[1.2] text-[#1d1f1d] mb-12">
             BEYOND <br /> BLUEPRINTS.
           </h2>
-          <button className="flex items-center gap-14 text-sm font-semibold uppercase tracking-wider ">
+          <button className="flex items-center gap-3 text-sm font-semibold uppercase tracking-wider ">
             View All
             <span className="w-8 h-8 rounded-full bg-white text-black flex items-center justify-center text-sm">
               &gt;
