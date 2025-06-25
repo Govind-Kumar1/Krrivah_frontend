@@ -4,10 +4,11 @@ export default {
   theme: {
     extend: {
       fontFamily: {
+        merchant: ['Merchant', 'sans-serif'],
   sans: ['"Instrument Sans"', 'sans-serif'], // Set as default for 'font-sans'
   instrumentSans: ['"Instrument Sans"', 'sans-serif'],
   montserrat: ['Montserrat', 'sans-serif'],
-  merchant: ['Merchant', 'sans-serif'],
+  
 }
 
     },

@@ -1,51 +1,50 @@
-import React, { useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import React, { useState, useEffect, useRef } from "react";
+
+// Custom hook for interval control
+function useInterval(callback, delay) {
+  const saved = useRef();
+  useEffect(() => { saved.current = callback }, [callback]);
+  useEffect(() => {
+    if (delay == null) return;
+    const id = setInterval(() => saved.current(), delay);
+    return () => clearInterval(id);
+  }, [delay]);
+}
 
 const images = [
   { src: "/SCENE 2.png", alt: "Scene 2" },
   { src: "/SCENE 3.png", alt: "Scene 3" },
   { src: "/SCENE 24.png", alt: "Scene 24" },
   { src: "/SCENE 17.png", alt: "Scene 17" },
-   { src: "/SCENE 16.png", alt: "Scene 16" },
-    { src: "/SCENE 4.png", alt: "Scene 4" },
+  { src: "/SCENE 16.png", alt: "Scene 16" },
+  { src: "/SCENE 4.png", alt: "Scene 4" },
 ];
 
 const CraftedSection = () => {
   const [start, setStart] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
 
-  // For infinite loop effect
-  const shiftLeft = () => {
-    setStart((prev) => (prev === 0 ? images.length - 1 : prev - 1));
-  };
+  const shiftRight = () => setStart(prev => (prev + 1) % images.length);
 
-  const shiftRight = () => {
-    setStart((prev) => (prev === images.length - 1 ? 0 : prev + 1));
-  };
+  useInterval(shiftRight, isPaused ? null : 2000);
 
-  // Arrange images in carousel order 
-  const getCarouselImages = () => {
-    return [
-      images[start % images.length],
-      images[(start + 1) % images.length],
-      images[(start + 2) % images.length],
-      images[(start + 3) % images.length],
-    ];
-  };
-
-  const carouselImages = getCarouselImages();
+  const carouselImages = Array.from({ length: 4 }, (_, i) =>
+    images[(start + i) % images.length]
+  );
 
   return (
     <section className="w-full py-12 flex flex-col items-center bg-white relative">
-      {/* Heading */}
       <h2 className="relative top-20 text-center text-[40px] md:text-[64px] leading-tight font-serif text-[#1A311E] mb-10">
         CRAFTED WITH PURPOSE. <br /> DEFINED BY DESIGN.
       </h2>
 
-      {/* Carousel Images */}
+      {/* Carousel */}
       <div className="flex flex-row justify-center gap-4 md:gap-[10px] w-full">
         {carouselImages.map((img, idx) => (
           <div
             key={idx}
+            onMouseEnter={() => setIsPaused(true)}
+            onMouseLeave={() => setIsPaused(false)}
             className={`w-[48%] md:w-[421px] h-[511px] overflow-hidden ${
               idx % 2 === 1 ? "mt-10 flex items-end" : "flex items-start"
             }`}
@@ -59,21 +58,15 @@ const CraftedSection = () => {
         ))}
       </div>
 
-      {/* Carousel Navigation Arrows at Bottom Center */}
-      <div className="absolute left-1/2 -translate-x-1/2 bottom-8 flex gap-6 z-20">
-        <button
-          onClick={shiftLeft}
-          className="bg-black/40 text-white hover:bg-black/70 rounded-full p-2"
-          aria-label="Previous"
-        >
-          <ChevronLeft size={32} />
-        </button>
-        <button
-          onClick={shiftRight}
-          className="bg-black/40 text-white hover:bg-black/70 rounded-full p-2"
-          aria-label="Next"
-        >
-          <ChevronRight size={32} />
+      {/* Text + Button */}
+      <div className="mt-12 text-center px-4 md:px-0">
+        <p className="text-lg text-gray-700 max-w-2xl mx-auto mb-6">
+          From materials to masterplans, every element is considered. Our
+          approach to design is rooted in balance between beauty and utility,
+          architecture and experience.
+        </p>
+        <button className="border border-black text-black font-semibold px-6 py-3 rounded-full hover:bg-black hover:text-white transition">
+          EXPLORE ALL PROJECTS
         </button>
       </div>
     </section>
