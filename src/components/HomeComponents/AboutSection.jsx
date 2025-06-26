@@ -1,6 +1,9 @@
 import React from 'react';
+import { useNavigate } from "react-router-dom";
 
 const AboutSection = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="w-full h-full min-h-screen bg-[#e5e6e1] py-[6vh] px-[6vw] font-sans flex items-center">
       <div className="flex w-full gap-22 justify-between items-center h-full"> 
@@ -34,7 +37,10 @@ const AboutSection = () => {
             that reflect a deeper understanding of form,
             function, and feeling.
           </p>
-          <button className="self-start px-6 py-2 bg-white rounded-full font-bold text-[16px] shadow-sm hover:bg-black hover:text-white transition">
+          <button
+            className="self-start px-6 py-2 bg-white rounded-full font-bold text-[16px] shadow-sm hover:bg-black hover:text-white transition"
+            onClick={() => navigate("/about")}
+          >
             LEARN MORE
           </button>
         </div>
