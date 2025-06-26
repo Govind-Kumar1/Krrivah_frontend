@@ -3,7 +3,7 @@ import React from 'react';
 const FoundersSection = () => {
   return (
     <section className="py-16 bg-white">
-      <div className="max-w-5xl mx-auto text-center px-4">
+      <div className="max-w-5xl mx-auto text-center px-14">
         {/* Top Headings */}
         <h4 className="text-2xl uppercase text-gray-900 tracking-wider mb-2">
           Meet The Founders
@@ -13,7 +13,7 @@ const FoundersSection = () => {
         </h2>
 
         {/* Founder Cards */}
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 ">
           
           {/* Ananth Rajan */}
           <div className="text-left">
