@@ -26,7 +26,7 @@ const CraftedSection = () => {
 
   const shiftRight = () => setStart(prev => (prev + 1) % images.length);
 
-  useInterval(shiftRight, isPaused ? null : 2000);
+  useInterval(shiftRight, isPaused ? null : 1000);
 
   const carouselImages = Array.from({ length: 4 }, (_, i) =>
     images[(start + i) % images.length]

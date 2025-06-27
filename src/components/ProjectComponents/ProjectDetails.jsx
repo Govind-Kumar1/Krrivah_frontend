@@ -43,7 +43,7 @@ const projects = [
   // Add more projects as needed
 ];
 
-const FeaturedProjects = () => {
+const ProjectDetails = () => {
   const [current, setCurrent] = useState(0);
 
   const prevProject = () => {
@@ -58,12 +58,8 @@ const FeaturedProjects = () => {
     <section className="w-full py-14  bg-white">
       {/* Header */}
       <div className="flex justify-between items-center mb-10 px-10">
-        <h2 className="text-[18px] font-medium tracking-widest text-gray-700 uppercase">
-          Featured Projects
-        </h2>
-        <button className="text-[16px] font-semibold border border-gray-300 rounded-full px-4 py-1 hover:bg-gray-100">
-          VIEW ALL
-        </button>
+         
+         
       </div>
 
       {/* Carousel */}
@@ -164,7 +160,7 @@ const FeaturedProjects = () => {
   );
 };
 
-export default FeaturedProjects;
+export default ProjectDetails;
 
 
 

@@ -16,25 +16,25 @@ const DesignSection = () => {
         {/* Middle Column - Large Image */}
         <div className="flex justify-center">
           <img
-            src="/Layer_1.png"  // ✅ Update with your correct public path
+            src="/Layer_1.png"  
             alt="Architectural Blueprint Section"
             className="max-w-[700px] lg:max-w-[800px] xl:max-w-[900px] h-auto object-contain"
           />
         </div>
 
-        {/* Right Column - Text and Button */}
+        {/* Right Column - Text and Button */} 
         <div className="flex flex-col space-y-5 text-gray-800">
-          <p className="text-base leading-relaxed">
+          <p className="text-base leading-relaxe ml-12 ">
             At Krrivah, design is not just how a space looks — it’s how it makes you feel.
           </p>
-          <p className="text-base leading-relaxed">
+          <p className="text-base leading-relaxed ml-12 ">
             We take cues from the land, the light, and the legacy of the region to shape built environments that blend form and function with cultural relevance. Our architectural approach weaves together local materials, climate responsiveness, and timeless spatial planning.
           </p>
-          <p className="text-base leading-relaxed">
+          <p className="text-base leading-relaxed ml-12 ">
             From open courtyards that breathe to textures that age gracefully — every decision is a quiet nod to balance, longevity, and livability.
           </p>
 
-          <button className="mt-4 px-6 py-2 border border-[#2F352D] text-[#2F352D] rounded-full text-sm font-medium hover:bg-[#2F352D] hover:text-white transition duration-300 w-fit">
+          <button className="mt- px-6 py-2 border border-[#2F352D] text-[#2F352D] rounded-full text-sm font-medium hover:bg-[#2F352D] hover:text-white transition duration-300 w-fit ml-12 ">
             LEARN MORE
           </button>
         </div>
@@ -45,3 +45,4 @@ const DesignSection = () => {
 };
 
 export default DesignSection;
+
