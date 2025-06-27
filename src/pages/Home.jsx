@@ -6,12 +6,15 @@ import VisionSection from '../components/HomeComponents/VisionSection'
 import CraftedSection from '../components/HomeComponents/CraftedSection'
 import Footer from '../components/Footer'
 import JournalSection from '../components/HomeComponents/JournalSection'
+import Navbar from '../components/Navbar'
 
 const Home = () => {
   return (
      <>
+     <Navbar/>
      <HomeHero/>
      <AboutSection/>
+     
      <FeaturedProjects/>
      <VisionSection/>
      <CraftedSection/>
