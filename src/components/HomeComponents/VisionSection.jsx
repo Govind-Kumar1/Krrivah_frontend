@@ -19,7 +19,7 @@ const VisionSection = () => {
           <p className="text-[18px] tracking-widest text-gray-400 uppercase mb-4">
             Our Vision
           </p>
-          <h2 className="relative -left-25 text-4xl md:text-6xl font-merchant leading-tight mb-6">
+          <h2 className="relative -left-25 text-4xl md:text-6xl font-merchant text-[#E3E8E0] leading-tight mb-6">
             IN HARMONY WITH <br />
             FORM, LIGHT, AND <br />
             LANDSCAPE.
@@ -30,7 +30,7 @@ const VisionSection = () => {
             rooted in sustainable materiality, refined aesthetics, and
             intentional spaces.
           </p>
-          <button className="self-start bg-white text-black text-sm font-semibold px-5 py-2 rounded-full hover:bg-gray-200 transition">
+          <button className="self-start bg-white text-[#0B2204] text-sm font-semibold px-5 py-2 rounded-full  transition hover:bg-[#393F36] hover:text-white">
             GET IN TOUCH
           </button>
         </div>
