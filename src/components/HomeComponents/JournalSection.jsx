@@ -1,4 +1,5 @@
 import React from "react";
+import { ArrowRight, ChevronRight } from "lucide-react";
 
 const posts = [
   {
@@ -7,7 +8,7 @@ const posts = [
     title: "Why Design Thinking Matters in Real Estate",
     description:
       "From intuitive layouts to natural light flow, design thinking is transforming how we imagine modern living. Here's how we inte…",
-    image: "/SCENE 17.png", // Replace with actual image
+    image: "/SCENE 17.png",
   },
   {
     tag: "PROJECTS",
@@ -33,16 +34,16 @@ const JournalSection = () => {
       <div className="flex flex-col lg:flex-row gap-10 lg:gap-20 items-start">
         {/* Left Title */}
         <div className="flex-1">
-          <p className="text-[18px] gap-40 text-gray-600 font-medium mb-40 uppercase tracking-widest">
+          <p className="text-[18px] gap-40 text-[#5F5F5F] font-medium mb-40 uppercase tracking-widest">
             Journal
           </p>
-          <h2 className="text-[56px] font-serif leading-[1.2] text-[#1d1f1d] mb-12">
+          <h2 className="text-[56px] font-serif leading-[1.2] text-[#393F36] mb-12">
             BEYOND <br /> BLUEPRINTS.
           </h2>
-          <button className="flex items-center gap-3 text-sm font-semibold uppercase tracking-wider ">
+          <button className="flex items-center text-[#2E2E2E] gap-3 text-sm font-semibold uppercase tracking-wider">
             View All
-            <span className="w-8 h-8 rounded-full bg-white text-black flex items-center justify-center text-sm">
-              &gt;
+            <span className="w-8 h-8 rounded-full text-[20px] bg-white text-black flex items-center justify-center text-sm">
+               <ChevronRight size={24} strokeWidth={2.5} /> 
             </span>
           </button>
         </div>
@@ -52,7 +53,7 @@ const JournalSection = () => {
           {posts.map((post, index) => (
             <div
               key={index}
-              className="bg-white  overflow-hidden shadow-sm w-[300px] h-[450px] flex flex-col"
+              className="bg-white overflow-hidden shadow-sm w-[300px] h-[450px] flex flex-col"
             >
               <img
                 src={post.image}
@@ -60,13 +61,14 @@ const JournalSection = () => {
                 className="w-full h-[220px] object-cover"
               />
               <div className="p-5 flex-1 flex flex-col">
-                <p className="text-xs font-semibold uppercase text-gray-600 mb-2 tracking-wide">
-                  {post.tag} • {post.date}
+                <p className="text-xs font-semibold uppercase text-[#393F36] mb-2 tracking-wide">
+                  {post.tag}
+                  <span className="text-[#828282]"> • {post.date}</span>
                 </p>
-                <h3 className="text-md font-semibold text-gray-900 mb-2">
+                <h3 className="text-md font-semibold text-[#2E2E2E] mb-2">
                   {post.title}
                 </h3>
-                <p className="text-sm text-gray-600 leading-relaxed">
+                <p className="text-sm text-[#5F5F5F] leading-relaxed">
                   {post.description}
                 </p>
               </div>

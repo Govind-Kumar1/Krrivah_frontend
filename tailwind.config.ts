@@ -5,12 +5,16 @@ export default {
     extend: {
       fontFamily: {
         merchant: ['Merchant', 'sans-serif'],
-  sans: ['"Instrument Sans"', 'sans-serif'], // Set as default for 'font-sans'
-  instrumentSans: ['"Instrument Sans"', 'sans-serif'],
-  montserrat: ['Montserrat', 'sans-serif'],
-  
-}
-
+        sans: ['"Instrument Sans"', 'sans-serif'],
+        instrumentSans: ['"Instrument Sans"', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
+      },
+      colors: {
+        primaryText: '#0E0E0E',
+      },
+      textColor: {
+        DEFAULT: '#0E0E0E',
+      },
     },
     screens: {
       sm: '640px',

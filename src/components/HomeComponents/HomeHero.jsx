@@ -65,14 +65,14 @@ const HomeHero = () => {
             </div>
 
             {/* Hero Content */}
-            <div className="absolute z-20 bottom-24 right-[6vw] max-w-[28vw] ">
+            <div className="absolute z-20 bottom-24 right-[2vw] max-w-[28vw] gap-10 ">
                 <h2 className="text-[2rem] font-light mb-6 tracking-wider leading-tight">
                     {slides[current].title}
                 </h2>
-                <p className="text-sm font-light leading-relaxed text-white/90">
+                <p className="text-[16px] font-normal  leading-5 text-white/90">
                     {slides[current].description}
                 </p>
-                <button className="mt-6 px-6 py-2  border border-white rounded-full text-sm tracking-wide hover:bg-white hover:text-black transition">
+                <button className="mt-14 px-6 py-2  border border-[#E7E9E640] rounded-full text-[16px] tracking-wide hover: hover:bg-[#393F36] hover:text-white transition">
                     LEARN MORE
                 </button>
             </div>

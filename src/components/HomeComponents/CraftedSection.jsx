@@ -30,42 +30,43 @@ const CraftedSection = () => {
 
   const carouselImages = Array.from({ length: 4 }, (_, i) =>
     images[(start + i) % images.length]
-  );
+  ); 
 
   return (
     <section className="w-full py-12 flex flex-col items-center bg-white relative">
-      <h2 className="relative top-20 text-center text-[40px] md:text-[64px] leading-tight font-serif text-[#1A311E] mb-10">
+      <h2 className="relative top-20 text-center text-[40px] md:text-[64px] leading-tight font-serif text-[#0B2204] mb-10">
         CRAFTED WITH PURPOSE. <br /> DEFINED BY DESIGN.
       </h2>
 
       {/* Carousel */}
-      <div className="flex flex-row justify-center gap-4 md:gap-[10px] w-full">
+      <div className="flex  justify-center gap-10 md:gap-[50px] w-full">
         {carouselImages.map((img, idx) => (
           <div
             key={idx}
             onMouseEnter={() => setIsPaused(true)}
             onMouseLeave={() => setIsPaused(false)}
-            className={`w-[48%] md:w-[421px] h-[511px] overflow-hidden ${
-              idx % 2 === 1 ? "mt-10 flex items-end" : "flex items-start"
-            }`}
+            className={`w-[521px] h-[511px] overflow-hidden ${
+              idx % 2 === 1 ? "mt-20  " : "mt-0"
+              
+            }` }
           >
             <img
               src={img.src}
               alt={img.alt}
-              className="w-full h-[511px] object-cover"
+              className="w-[521px] h-[511px] object-cover"
             />
           </div>
         ))}
       </div>
 
       {/* Text + Button */}
-      <div className="mt-12 text-center px-4 md:px-0">
-        <p className="text-lg text-gray-700 max-w-2xl mx-auto mb-6">
+      <div className="mt-12 w-[340px] text-center px-4 md:px-0">
+        <p className="text-sm text-[#5F5F5F] max-w-2xl mx-auto mb-6">
           From materials to masterplans, every element is considered. Our
           approach to design is rooted in balance between beauty and utility,
           architecture and experience.
         </p>
-        <button className="border border-black text-black font-semibold px-6 py-3 rounded-full hover:bg-black hover:text-white transition">
+        <button className=" border-[1px] border-[#0B2204] text-[#0B2204] font-semibold px-6 py-3 rounded-full  hover:bg-[#393F36] hover:text-white transition">
           EXPLORE ALL PROJECTS
         </button>
       </div>

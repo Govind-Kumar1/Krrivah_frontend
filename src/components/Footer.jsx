@@ -26,17 +26,17 @@ const Footer = () => {
         </ul>
 
         {/* Social Icons */}
-        <div className="flex items-center gap-4 mt-4 md:mt-0">
+        <div className="flex items-center gap-10 mt-4 md:mt-0">
           <a
             href="#"
-            className="text-black hover:text-gray-600 transition"
+            className="text-gray-800 hover:text-gray-600 transition"
             aria-label="Facebook"
           >
             <FaFacebookF size={18} />
           </a>
           <a
             href="#"
-            className="text-black hover:text-gray-600 transition"
+            className="text-gray-800 hover:text-gray-600 transition"
             aria-label="Instagram"
           >
             <FaInstagram size={18} />
@@ -45,7 +45,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Row */}
-      <div className="flex flex-col md:flex-row justify-between items-center px-6 md:px-20 py-4 border-t border-gray-100 text-xs text-gray-500">
+      <div className="flex flex-col md:flex-row justify-between items-center px-6 md:px-20 py-4 border-t border-gray-300 text-xs text-gray-500">
         <span>© Copyright 2025 Krrivah – All Rights Reserved</span>
         <a href="#" className="hover:underline mt-2 md:mt-0">
           Privacy Policy
