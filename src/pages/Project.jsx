@@ -8,7 +8,7 @@ import Navbar from '../components/Navbar'
 const Project = () => {
   return (
     <>
-    <Navbar/>
+    <Navbar2/>
     <HeroProject/>   
     <ProjectDetails/>
 
