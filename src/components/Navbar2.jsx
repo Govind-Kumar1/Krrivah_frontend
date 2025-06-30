@@ -1,43 +1,80 @@
+// components/Navbar.jsx
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 const Navbar2 = () => {
-  const navLinks = [
-    { name: 'ABOUT', path: '/about' },
-    { name: 'PROJECTS', path: '/projects' },
-    { name: 'DESIGN', path: '/design' },
-    { name: 'BLOGS', path: '/blogs' },
-    { name: 'CONTACT', path: '/contact' },
-  ];
-
   return (
-    <nav className="fixed top-0 z-20 w-full bg-white text-black">
-      <div className="flex justify-between items-center px-[5.5vw] py-[2.5vh]">
-
-        {/* Left: Logo */}
-        <div className="flex items-center gap-2">
-          <img src="/Logo (2).png" alt="Logo" className="h-12 w-[200px] object-contain" />
-        </div>
-
-        {/* Right: Navigation Links */}
-        <div className="flex gap-[4vw] font-sans font-semibold text-[12px] leading-[100%] tracking-[2px] uppercase">
-          {navLinks.map((link) => (
-            <NavLink
-              key={link.name}
-              to={link.path}
-              className={({ isActive }) =>
-                `hover:bg-black hover:text-white b-1  px-4 py-2 rounded-full transition ${
-                  isActive ? 'bg-black text-white' : 'text-black'
-                }`
-              }
-            >
-              {link.name}
-            </NavLink>
-          ))}
-        </div>
-
+    <div className="absolute top-0 z-20 w-full flex justify-between items-center px-[5.5vw] pt-[2.5vh] text-white">
+      <div className="flex items-center gap-2 -ml-20">
+        <Link to="/">
+          <img src="/Logo.png" alt="Logo" className="h-12 w-[200px] object-contain cursor-pointer" />
+        </Link>
+         {/* <p className=' w-full -ml-10 text-2xl'>KRRIVAH</p> */}
       </div>
-    </nav>
+
+      <div className="flex gap-[4vw] font-sans font-semibold text-[12px] leading-[100%] tracking-[2px] uppercase">
+        <NavLink
+          to="/about"
+          className={({ isActive }) =>
+            `px-4 py-3 rounded-full transition-all duration-200 ${
+              isActive
+                ? "bg-white text-black"
+                : "hover:bg-white hover:text-black"
+            }`
+          }
+        >
+          ABOUT
+        </NavLink>
+        <NavLink
+          to="/projects"
+          className={({ isActive }) =>
+            `px-4 py-3 rounded-full transition-all duration-200 ${
+              isActive
+                ? "bg-white text-black"
+                : "hover:bg-white hover:text-black"
+            }`
+          }
+        >
+          PROJECTS
+        </NavLink>
+        <NavLink
+          to="/design"
+          className={({ isActive }) =>
+            `px-4 py-3 rounded-full transition-all duration-200 ${
+              isActive
+                ? "bg-white text-black"
+                : "hover:bg-white hover:text-black"
+            }`
+          }
+        >
+          DESIGN
+        </NavLink>
+        <NavLink
+          to="/blogs"
+          className={({ isActive }) =>
+            `px-4 py-3 rounded-full transition-all duration-200 ${
+              isActive
+                ? "bg-white text-black"
+                : "hover:bg-white hover:text-black"
+            }`
+          }
+        >
+          BLOGS
+        </NavLink>
+        <NavLink
+          to="/contact"
+          className={({ isActive }) =>
+            `px-4 py-3 rounded-full transition-all duration-200 ${
+              isActive
+                ? "bg-white text-black"
+                : "hover:bg-white hover:text-black"
+            }`
+          }
+        >
+          CONTACT
+        </NavLink>
+      </div>
+    </div>
   );
 };
 
