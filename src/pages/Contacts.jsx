@@ -1,12 +1,18 @@
 import React from 'react'
-import Navbar2 from '../components/Navbar2'
+import ContactSection from '../components/ContactComponents/ContactSection'
+import NavbarLight from '../components/NavbarLight'
+import Footer from '../components/Footer'
+import ContactHero from '../components/ContactComponents/ContactHero'
 
-const Contacts = () => {
+const Contact = () => {
   return (
     <>
-    <Navbar2/>
+    <NavbarLight/>
+    <ContactHero/>
+    <ContactSection/>
+    {/* <Footer/> */}
     </>
   )
 }
 
-export default Contacts
+export default Contact
