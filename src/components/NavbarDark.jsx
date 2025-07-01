@@ -5,12 +5,12 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <div
-      className="bg-white border-b border-gray-200 text-gray-900
+      className=" fixed border-b border-gray-200  
     top-0 z-20 w-full flex justify-between items-center px-[5.5vw] pt-[2.5vh] py-3 "
     >
       <div className="flex items-center gap-2">
         <img
-          src="/Logo (2).png"
+          src="/Logo.png"
           alt="Logo"
           className="h-12 w-[200px] object-contain "
         />
