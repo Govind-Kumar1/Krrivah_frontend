@@ -22,7 +22,7 @@ const Footer = () => {
         </div>
 
         {/* Nav Links */}
-        <ul className="flex flex-wrap justify-center gap-10 md:gap-26 text-sm font-semibold tracking-wider text-black">
+        <ul className="flex flex-wrap justify-center gap-10 md:gap-26 text-sm font-semibold tracking-wider text-[#0E0E0E]">
           <li>
             <Link to="/about" className="hover:text-gray-600 cursor-pointer">ABOUT</Link>
           </li>

@@ -15,7 +15,7 @@ const Navbar = () => {
   const getLinkClass = (isActive) => {
     const isHome = location.pathname === '/';
     const isAbout = location.pathname === '/about';
-
+    const isDesign = location.pathname === '/design';
     if (isHome) {
       return `px-4 py-3 rounded-full transition underline-offset-8  
         ${isActive ? 'bg-black text-white' : 'text-white'}
@@ -23,6 +23,11 @@ const Navbar = () => {
     }
 
     if (isAbout) {
+      return `px-4 py-2 rounded-full transition underline-offset-8 decoration-2
+        ${isActive ? 'bg-white text-black' : 'text-white'}
+        hover:bg-white hover:text-gray-400`;
+    }
+    if (isDesign) {
       return `px-4 py-2 rounded-full transition underline-offset-8 decoration-2
         ${isActive ? 'bg-white text-black' : 'text-white'}
         hover:bg-white hover:text-gray-400`;
@@ -35,7 +40,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 z-20 w-full">
+    <nav className="absolute top-0 z-20 w-full">
       <div className="flex justify-between items-center px-[5.5vw] py-[2.5vh]">
 
         {/* Left: Logo */}

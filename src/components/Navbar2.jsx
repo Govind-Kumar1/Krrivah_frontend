@@ -3,7 +3,7 @@ import { NavLink, Link } from 'react-router-dom';
 
 const Navbar2 = () => {
   return (
-    <nav className='fixed top-0 z-20 w-full'>
+    <nav className='top-0 z-20 w-full border-b border-gray-500'>
       <div className="absolute top-0 z-20 w-full flex justify-between items-center px-[5.5vw] pt-[2.5vh] text-black">
       <div className="flex items-center gap-2 -ml-20">
         <Link to="/">
@@ -16,7 +16,7 @@ const Navbar2 = () => {
           to="/about"
           className={({ isActive }) =>
             `px-4 py-3 rounded-full transition-all duration-200 ${
-              isActive ? "bg-black text-white" : "bg-white text-black"
+              isActive ? "bg-black text-white" : " text-black"
             }`
           }
         >
@@ -27,7 +27,7 @@ const Navbar2 = () => {
           to="/projects"
           className={({ isActive }) =>
             `px-4 py-3 rounded-full transition-all duration-200 ${
-              isActive ? "bg-black text-white" : "bg-white text-black"
+              isActive ? "bg-black text-white" : " text-black"
             }`
           }
         >
@@ -38,7 +38,7 @@ const Navbar2 = () => {
           to="/design"
           className={({ isActive }) =>
             `px-4 py-3 rounded-full transition-all duration-200 ${
-              isActive ? "bg-black text-white" : "bg-white text-black"
+              isActive ? "bg-black text-white" : " text-black"
             }`
           }
         >
@@ -49,7 +49,7 @@ const Navbar2 = () => {
           to="/blogs"
           className={({ isActive }) =>
             `px-4 py-3 rounded-full transition-all duration-200 ${
-              isActive ? "bg-black text-white" : "bg-white text-black"
+              isActive ? "bg-black text-white" : " text-black"
             }`
           }
         >
@@ -58,9 +58,9 @@ const Navbar2 = () => {
 
         <NavLink
           to="/contact"
-          className={({ isActive }) =>
+         className={({ isActive }) =>
             `px-4 py-3 rounded-full transition-all duration-200 ${
-              isActive ? "bg-black text-white" : "bg-white text-black"
+              isActive ? "bg-black text-white" : " text-black"
             }`
           }
         >
