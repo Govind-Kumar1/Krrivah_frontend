@@ -24,8 +24,8 @@ const Navbar = () => {
 
     if (isAbout) {
       return `px-4 py-2 rounded-full transition underline-offset-8 decoration-2
-        ${isActive ? 'bg-black text-white' : 'text-white'}
-        hover:bg-white hover:text-white`;
+        ${isActive ? 'bg-white text-black' : 'text-white'}
+        hover:bg-white hover:text-gray-400`;
     }
 
     // Default styling for other pages

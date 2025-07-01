@@ -8,7 +8,7 @@ import Navbar2 from '../components/Navbar2'
 const Design = () => {
   return (
      <>
-     <Navbar2/>
+     <Navbar/>
      <HeroDesign/>
      <DesignSection/>
      <GallerySection/>
