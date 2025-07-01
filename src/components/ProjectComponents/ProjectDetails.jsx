@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { ChevronLeft, ChevronRight } from "lucide-react";
 const LocationIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -55,7 +55,7 @@ const ProjectDetails = () => {
   };
 
   return (
-    <section className="w-full py-14  bg-white">
+    <section className="w-full py-18  bg-white">
       {/* Header */}
       <div className="flex justify-between items-center mb-10 px-10">
          
@@ -63,9 +63,10 @@ const ProjectDetails = () => {
       </div>
 
       {/* Carousel */}
+      {/* Carousel */}
       <div className="relative flex items-end gap-40 justify-center">
         {/* Previous Project (Left) */}
-        <div className="w-[420px] h-[660px]  relative   overflow-hidden shadow-md hidden lg:block">
+        <div className="w-[420px] h-[600px]  relative   overflow-hidden hidden lg:block">
           <img
             src={
               projects[(current - 1 + projects.length) % projects.length].image
@@ -90,17 +91,20 @@ const ProjectDetails = () => {
         </div>
 
         {/* Current Project (Center) */}
-        <div className="w-[600px] h-[780px] flex flex-col items-stretch overflow-hidden shadow-lg bg-white">
+        <div className="w-[460px] h-[660px] flex flex-col   "
+        
+        >
+          
           {/* Image with overlay */}
-          <div className="relative w-full h-[660px]">
+          <div className="relative w-[460px] h-[780px]">
             <img
               src={projects[current].image}
               alt={projects[current].title}
-              className="w-full h-full object-cover"
+              className="w-[460px] h-[600px] object-cover"
             />
             {/* Overlay: Title and tags */}
             <div className="absolute bottom-0 left-0 w-full px-6 pt-6 z-10">
-              <h3 className="text-[28px] font-serif mb-3 text-white drop-shadow-lg">
+              <h3 className="text-[64px]  mb-3 text-white drop-shadow-lg">
                 {projects[current].title}
               </h3>
               <div className="flex gap-2 text-xs font-semibold uppercase tracking-wide mb-4 flex-wrap">
@@ -121,18 +125,19 @@ const ProjectDetails = () => {
           </div>
 
           {/* Content below the image */}
-          <div className="w-full px-6  pt-6 bg-white text-black flex items-center  gap-[24px]">
-            <p className="basis-6/10 h-[60px] font-sans font-normal text-[15px] leading-[135%] tracking-[0px] text-gray-700">
+          <div className="w-full  pt-6 bg-white text-black flex items-center  justify-between gap-[24px]">
+            <p className="basis-7/10  h-[100px]  font-normal text-[15px] leading-[120%] tracking-[0px] text-[#0E0E0E]">
               {projects[current].description}
             </p>
-            <button className="border-2 border-gray-300 text-sm font-semibold  hover:bg-black hover:text-white  h-fit transition  w-fit px-2 py-1 rounded-4xl">
+            <button className="border-1 mb-8 border-gray-300 text-sm font-semibold text-[#0B2204]  hover:bg-[#393F36] hover:text-white  h-fit transition 
+             w-[150px] px-3 py-3 rounded-4xl">
               LEARN MORE
             </button>
           </div>
         </div>
 
         {/* Next Project (Right) */}
-        <div className="w-[420px] h-[660px] overflow-hidden shadow-md hidden lg:block">
+        <div className="w-[420px] h-[600px] overflow-hidden shadow-md hidden lg:block">
           <img
             src={projects[(current + 1) % projects.length].image}
             alt="Project Right"
@@ -140,20 +145,20 @@ const ProjectDetails = () => {
           />
         </div>
       </div>
-
-      {/* Pagination Dots */}
-      <div className="flex justify-center mt-8 gap-4">
+        {/* Pagination Dots */}
+       <div className="flex justify-center items-center mt-16 gap-4">
         <button
-          className="w-8 h-8 rounded-full border border-gray-400 flex items-center justify-center text-lg text-gray-700 hover:bg-gray-100"
+          className="w-8 h-8 rounded-full border cursor-pointer border-gray-400 flex items-center justify-center bg-gray-400 text-gray-700 hover:bg-gray-100"
           onClick={prevProject}
         >
-          ‹
+          <ChevronLeft  size={22} strokeWidth={3} />  
         </button>
+
         <button
-          className="w-9 h-9 rounded-full bg-black text-white flex items-center justify-center text-lg"
+          className="w-10 h-10 rounded-full cursor-pointer bg-black text-white flex items-center justify-center"
           onClick={nextProject}
         >
-          ›
+          <ChevronRight size={24} strokeWidth={2.5} /> 
         </button>
       </div>
     </section>

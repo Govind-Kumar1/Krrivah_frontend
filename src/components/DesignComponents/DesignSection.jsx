@@ -2,13 +2,13 @@ import React from 'react';
 
 const DesignSection = () => {
   return (
-    <section className="bg-white text-black px-4 md:px-16 py-20 overflow-hidden">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+    <section className="bg-white w-full text-black px-4 md:px-12 py-20 overflow-hidden">
+      <div className=" grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
 
         {/* Left Column - Heading */}
-        <div className="space-y-6">
+        <div className="space-y-6 flex flex-col justify-between h-full  ">
           <h4 className="text-sm uppercase tracking-wider text-black">Design Philosophy</h4>
-          <h2 className="font-serif text-5xl md:text-6xl lg:text-7xl leading-tight tracking-normal text-[#3E3B36]">
+          <h2 className="font-serif text-5xl lg:text-5xl leading-16 tracking-normal text-[#3E3B36]">
             DESIGNS <br /> THAT LIVE <br /> BEYOND THE <br /> BLUEPRINT
           </h2>
         </div>

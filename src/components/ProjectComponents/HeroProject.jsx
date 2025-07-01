@@ -7,7 +7,7 @@ const HeroProject = () => {
 
         {/* Left Side - Large Heading */}
         <div className="flex-1">
-          <h1 className="text-[8vw] md:text-[6vw] leading-[100%] text-[#0B1F06] font-light tracking-tight">
+          <h1 className="text-[100px] md:text-[6vw] leading-[100%] text-[#0B2204] font-light tracking-tight">
             FROM VISION<br />TO FORM
           </h1>
         </div>
@@ -15,9 +15,9 @@ const HeroProject = () => {
         {/* Right Side - Small Description */}
         <div className="flex-1 mt-8 md:mt-0 md:flex md:items-end md:justify-end">
           <div className="max-w-sm w-full">
-            <p className="md:-ml-20 text-[16px] text-gray-800 text-right leading-relaxed font-sans">
+            <p className="md:-ml-20 text-[15px] text-gray-800 text-right leading-relaxed font-sans">
               Every project is a reflection of thoughtful design, rooted in <br />
-              <span className='md:ml-13 block text-left'>purpose and crafted with care.</span>
+              <span className='md:ml-20 block text-left'>purpose and crafted with care.</span>
             </p>
           </div>
         </div>
