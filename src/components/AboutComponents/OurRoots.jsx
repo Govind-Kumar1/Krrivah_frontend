@@ -19,7 +19,7 @@ const OurRoots = () => {
           <p className="text-[15px] text-gray-700 leading-relaxed mb-3 max-w-md">
             Born from the desire to blend conscious design with purposeful development, Krrivah crafts spaces that respect land, elevate lifestyle, and build long-term value. With deep roots in South India’s cultural and architectural heritage, we strive to create environments where every brick tells a story — of craft, community, and care.
           </p>
-          <button className="px-5 py-2 mt-6 bg-white text-black text-sm font-semibold rounded-full hover:shadow-md transition-all">
+          <button className="px-5 py-2 mt-6 bg-white text-black text-sm font-semibold rounded-full hover:bg-[#393F36] hover:text-white hover:cursor-pointer transition">
             GET IN TOUCH
           </button>
         </div>
@@ -32,9 +32,9 @@ const OurRoots = () => {
             className="w-full h-full  filter grayscale"
           />
           <img
-            src="/SCENE 3.png" // Foreground couch window scene
+            src="/SCENE 8V1.png" // Foreground couch window scene
             alt="Interior"
-            className="absolute  top-[25%] -left-[20%] w-[350px] h-[400px] shadow-lg"
+            className="absolute object-cover  top-[25%] -left-[20%] w-[328px] h-[430px] shadow-lg"
           />
         </div>
       </div>

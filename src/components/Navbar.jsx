@@ -19,18 +19,18 @@ const Navbar = () => {
     if (isHome) {
       return `px-4 py-3 rounded-full transition underline-offset-8  
         ${isActive ? 'bg-black text-white' : 'text-white'}
-        hover:bg-[#393F36] text-white b-2`;
+        hover:bg-[#393F36] hover:text-white transition`;
     }
 
     if (isAbout) {
       return `px-4 py-2 rounded-full transition underline-offset-8 decoration-2
         ${isActive ? 'bg-white text-black' : 'text-white'}
-        hover:bg-white hover:text-gray-400`;
+        hover:bg-[#393F36] hover:text-white transition`;
     }
     if (isDesign) {
       return `px-4 py-2 rounded-full transition underline-offset-8 decoration-2
         ${isActive ? 'bg-white text-black' : 'text-white'}
-        hover:bg-white hover:text-gray-400`;
+       hover:bg-[#393F36] hover:text-white transition`;
     }
 
     // Default styling for other pages

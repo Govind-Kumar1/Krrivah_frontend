@@ -148,14 +148,14 @@ const ProjectDetails = () => {
         {/* Pagination Dots */}
        <div className="flex justify-center items-center mt-16 gap-4">
         <button
-          className="w-8 h-8 rounded-full border border-gray-400 flex items-center justify-center bg-gray-400 text-gray-700 hover:bg-gray-100"
+          className="w-8 h-8 rounded-full border cursor-pointer border-gray-400 flex items-center justify-center bg-gray-400 text-gray-700 hover:bg-gray-100"
           onClick={prevProject}
         >
-          <ChevronLeft size={22} strokeWidth={3} />  
+          <ChevronLeft  size={22} strokeWidth={3} />  
         </button>
 
         <button
-          className="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center"
+          className="w-10 h-10 rounded-full cursor-pointer bg-black text-white flex items-center justify-center"
           onClick={nextProject}
         >
           <ChevronRight size={24} strokeWidth={2.5} /> 
