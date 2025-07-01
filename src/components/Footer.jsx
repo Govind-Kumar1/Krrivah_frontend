@@ -11,14 +11,12 @@ const Footer = () => {
         <div className="flex items-center mb-4 md:mb-0">
           <Link to="/">
             <img
-              src="/Logo.png"
+              src="/Logo (2).png"
               alt="Krrivah Logo"
               className="h-30 w-40 object-contain cursor-pointer"
             />
           </Link>
-          <Link to="/" className="font-semibold text-[22px] -ml-20 cursor-pointer">
-            KRRIVAH
-          </Link>
+           
         </div>
 
         {/* Nav Links */}

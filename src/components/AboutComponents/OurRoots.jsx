@@ -27,7 +27,7 @@ const OurRoots = () => {
         {/* Right Content with image layering */}
         <div className="relative  w-[708px] h-[760px]  ">
           <img
-            src="/SCENE 16.png" // Background B&W aerial image
+            src="/SCENE 3.png" // Background B&W aerial image
             alt="Background"
             className="w-full h-full  filter grayscale"
           />
@@ -40,9 +40,9 @@ const OurRoots = () => {
       </div>
 
       {/* Stats Row */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-20">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-20 ">
         {[
-          {
+          { 
             title: "12+",
             subtitle: "years of design expertise shaping refined living environments.",
           },
@@ -70,7 +70,7 @@ const OurRoots = () => {
                 <sup className="text-sm ml-1 align-top">{item.superscript}</sup>
               )}
             </div>
-            <p className="text-sm text-gray-600">{item.subtitle}</p>
+            <p className="text-sm text-gray-600 text-left ">{item.subtitle}</p>
           </div>
         ))}
       </div>

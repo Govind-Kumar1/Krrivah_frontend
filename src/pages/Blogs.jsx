@@ -4,14 +4,16 @@ import NavbarDark from '../components/NavbarDark'
 import Footer from '../components/Footer'
 import Hero from '../components/BlogComponents/Hero'
 import Navbar from '../components/NavbarDark'
+import Navbar2 from '../components/Navbar2'
 const Blog = () => {
   return (
      <>
-     <Navbar/>
+     <Navbar2/>
      {/* <div className="border-t border-black my-4"></div> */}
      <Hero/> 
      <CardsBlogs/>
      {/* <Footer/> */}
+     {/* 1025 */}
      </>
   )
 }

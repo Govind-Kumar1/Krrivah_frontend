@@ -3,8 +3,8 @@ import { NavLink, Link } from 'react-router-dom';
 
 const Navbar2 = () => {
   return (
-    <nav className='top-0 z-20 w-full border-b border-gray-500'>
-      <div className="absolute top-0 z-20 w-full flex justify-between items-center px-[5.5vw] pt-[2.5vh] text-black">
+    <nav className=' '>
+      <div className="top-0 z-20 w-full border-b border-gray-200 text-gray-900  flex justify-between items-center px-[5.5vw] pt-[2.5vh] py-3">
       <div className="flex items-center gap-2 -ml-20">
         <Link to="/">
           <img src="/Logo (2).png" alt="Logo" className="h-14 w-[220px] object-contain cursor-pointer" />

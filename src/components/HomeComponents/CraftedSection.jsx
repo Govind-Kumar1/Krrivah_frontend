@@ -66,7 +66,7 @@ const CraftedSection = () => {
           approach to design is rooted in balance between beauty and utility,
           architecture and experience.
         </p>
-        <button className=" border-[1px] border-[#0B2204] text-[#0B2204] font-semibold px-6 py-3 rounded-full  hover:bg-[#393F36] hover:text-white transition">
+        <button className=" border-[1px] border-[#0B2204] text-[#0B2204] font-semibold px-6 py-3 rounded-full  hover:bg-[#393F36] hover:text-white transition hover:cursor-pointer">
           EXPLORE ALL PROJECTS
         </button>
       </div>

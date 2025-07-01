@@ -61,7 +61,7 @@ const FeaturedProjects = () => {
         <h2 className="text-[20px] font-medium tracking-widest text-[#5F5F5F] uppercase">
           Featured Projects
         </h2>
-        <button className="text-[14px] font-semibold border border-gray-400 h-[40px] w-[103px] rounded-full text-[#0B2204] px-4 py-1 hover:bg-[#393F36] hover:text-white">
+        <button className="text-[14px] font-semibold border border-gray-400 h-[40px] w-[103px] rounded-full text-[#0B2204] px-4 py-1 hover:bg-[#393F36] hover:cursor-pointer hover:text-white">
           VIEW ALL
         </button>
       </div>
@@ -133,7 +133,7 @@ const FeaturedProjects = () => {
               {projects[current].description}
             </p>
             <button className="border-1 mb-8 border-gray-300 text-sm font-semibold text-[#0B2204]  hover:bg-[#393F36] hover:text-white  h-fit transition 
-             w-[150px] px-3 py-3 rounded-4xl">
+             w-[150px] px-3 py-3 rounded-4xl hover:cursor-pointer">
               LEARN MORE
             </button>
           </div>
