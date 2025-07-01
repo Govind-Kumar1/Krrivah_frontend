@@ -1,15 +1,14 @@
-// components/Navbar.jsx
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
 
 const Navbar2 = () => {
   return (
-    <div className="absolute top-0 z-20 w-full flex justify-between items-center px-[5.5vw] pt-[2.5vh] text-white">
+    <nav className='fixed top-0 z-20 w-full'>
+      <div className="absolute top-0 z-20 w-full flex justify-between items-center px-[5.5vw] pt-[2.5vh] text-black">
       <div className="flex items-center gap-2 -ml-20">
         <Link to="/">
-          <img src="/Logo.png" alt="Logo" className="h-12 w-[200px] object-contain cursor-pointer" />
+          <img src="/Logo (2).png" alt="Logo" className="h-14 w-[220px] object-contain cursor-pointer" />
         </Link>
-         {/* <p className=' w-full -ml-10 text-2xl'>KRRIVAH</p> */}
       </div>
 
       <div className="flex gap-[4vw] font-sans font-semibold text-[12px] leading-[100%] tracking-[2px] uppercase">
@@ -17,57 +16,51 @@ const Navbar2 = () => {
           to="/about"
           className={({ isActive }) =>
             `px-4 py-3 rounded-full transition-all duration-200 ${
-              isActive
-                ? "bg-white text-black"
-                : "hover:bg-white hover:text-black"
+              isActive ? "bg-black text-white" : "bg-white text-black"
             }`
           }
         >
           ABOUT
         </NavLink>
+
         <NavLink
           to="/projects"
           className={({ isActive }) =>
             `px-4 py-3 rounded-full transition-all duration-200 ${
-              isActive
-                ? "bg-white text-black"
-                : "hover:bg-white hover:text-black"
+              isActive ? "bg-black text-white" : "bg-white text-black"
             }`
           }
         >
           PROJECTS
         </NavLink>
+
         <NavLink
           to="/design"
           className={({ isActive }) =>
             `px-4 py-3 rounded-full transition-all duration-200 ${
-              isActive
-                ? "bg-white text-black"
-                : "hover:bg-white hover:text-black"
+              isActive ? "bg-black text-white" : "bg-white text-black"
             }`
           }
         >
           DESIGN
         </NavLink>
+
         <NavLink
           to="/blogs"
           className={({ isActive }) =>
             `px-4 py-3 rounded-full transition-all duration-200 ${
-              isActive
-                ? "bg-white text-black"
-                : "hover:bg-white hover:text-black"
+              isActive ? "bg-black text-white" : "bg-white text-black"
             }`
           }
         >
           BLOGS
         </NavLink>
+
         <NavLink
           to="/contact"
           className={({ isActive }) =>
             `px-4 py-3 rounded-full transition-all duration-200 ${
-              isActive
-                ? "bg-white text-black"
-                : "hover:bg-white hover:text-black"
+              isActive ? "bg-black text-white" : "bg-white text-black"
             }`
           }
         >
@@ -75,7 +68,9 @@ const Navbar2 = () => {
         </NavLink>
       </div>
     </div>
-  );
+
+    </nav>
+      );
 };
 
 export default Navbar2;

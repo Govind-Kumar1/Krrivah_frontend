@@ -8,7 +8,7 @@ import Navbar2 from '../components/Navbar2'
 const About = () => {
   return (
     <>
-    <Navbar2/>
+    <Navbar/>
     <AboutHero/>
     <OurRoots/>
     <FoundersSection/>
