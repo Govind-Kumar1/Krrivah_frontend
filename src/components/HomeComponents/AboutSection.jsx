@@ -36,7 +36,7 @@ const AboutSection = () => {
             function, and feeling.
           </p>
           <button
-            className="self-start px-6 py-2 bg-white rounded-full font-bold text-[16px] shadow-sm hover:hover:bg-[#393F36]  hover:text-white transition"
+            className="self-start px-6 py-2 bg-white rounded-full font-bold text-[16px] shadow-sm hover:hover:bg-[#393F36]  hover:text-white transition hover:cursor-pointer"
             onClick={() => navigate("/about")}
           >
             LEARN MORE

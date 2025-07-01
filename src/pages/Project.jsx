@@ -4,7 +4,7 @@ import HeroProject from '../components/ProjectComponents/HeroProject'
 import Navbar2 from '../components/Navbar2'
 import FeaturedProjects from '../components/HomeComponents/FeaturedProjects'
 import ProjectDetails from '../components/ProjectComponents/ProjectDetails'
-import Navbar from '../components/Navbar'
+import Navbar from '../components/NavbarDark'
 const Project = () => {
   return (
     <>
