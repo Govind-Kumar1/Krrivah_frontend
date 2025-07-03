@@ -30,7 +30,7 @@ const VisionSection = () => {
             rooted in sustainable materiality, refined aesthetics, and
             intentional spaces.
           </p>
-          <button className="mr-50 md:ml-44 self-center md:self-start bg-white text-[#0B2204] text-xs sm:text-sm font-semibold px-4 sm:px-5 py-2 rounded-full transition hover:bg-[#393F36] hover:text-white hover:cursor-pointer ">
+          <button className="mr-44 md:ml-44 self-center md:self-start bg-white text-[#0B2204] text-xs sm:text-sm font-semibold px-4 sm:px-5 py-2 rounded-full transition hover:bg-[#393F36] hover:text-white hover:cursor-pointer ">
             GET IN TOUCH
           </button>
         </div>

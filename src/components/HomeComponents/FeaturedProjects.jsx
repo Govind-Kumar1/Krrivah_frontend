@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+
 const LocationIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -45,6 +47,7 @@ const projects = [
 
 const FeaturedProjects = () => {
   const [current, setCurrent] = useState(0);
+  const navigate = useNavigate();
 
   const prevProject = () => {
     setCurrent((prev) => (prev === 0 ? projects.length - 1 : prev - 1));
@@ -124,10 +127,13 @@ const FeaturedProjects = () => {
 
           {/* Content below the image */}
           <div className="w-full pt-6 bg-white text-black flex flex-col md:flex-row items-center justify-between gap-4 md:gap-[24px] px-4 md:px-0">
-            <p className="font-normal text-[15px] leading-[120%] tracking-[0px] text-[#0E0E0E]">
+            <p className=" basis-7/10 font-normal text-[15px] leading-[120%] tracking-[0px] text-[#0E0E0E]">
               {projects[current].description}
             </p>
-            <button className="border border-gray-300 text-sm font-semibold text-[#0B2204] hover:bg-[#393F36] hover:text-white px-6 py-3 rounded-full transition hover:cursor-pointer">
+            <button
+              className="basis-3/10 border border-gray-300 text-sm font-semibold text-[#0B2204] hover:bg-[#393F36] hover:text-white px-2 py-3 rounded-full transition hover:cursor-pointer"
+              onClick={() => navigate("/ProjectDetails")}
+            >
               LEARN MORE
             </button>
           </div>
@@ -144,19 +150,19 @@ const FeaturedProjects = () => {
       </div>
 
       {/* Pagination Dots */}
-       <div className="flex justify-center items-center mt-24 md:mt-18  gap-4">
+      <div className="flex justify-center items-center mt-24 md:mt-18  gap-4">
         <button
           className="w-8 h-8 rounded-full border border-gray-400 flex items-center justify-center bg-gray-400 text-gray-700 hover:bg-gray-100"
           onClick={prevProject}
         >
-          <ChevronLeft size={22} strokeWidth={3} />  
+          <ChevronLeft size={22} strokeWidth={3} />
         </button>
 
         <button
           className="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center"
           onClick={nextProject}
         >
-          <ChevronRight size={24} strokeWidth={2.5} /> 
+          <ChevronRight size={24} strokeWidth={2.5} />
         </button>
       </div>
     </section>
