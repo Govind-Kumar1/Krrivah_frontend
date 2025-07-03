@@ -11,10 +11,10 @@ import Contacts from './pages/Contacts.jsx'
 import Project from './pages/Project.jsx'
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
-    <>
+    <div className=' '>
     {/* <Home/> */}
     <Router>
       {/* <Navbar/> */}
@@ -31,7 +31,7 @@ function App() {
           
           
          
-    </>
+    </div>
   ) 
 }
 
