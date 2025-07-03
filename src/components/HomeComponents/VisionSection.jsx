@@ -6,11 +6,11 @@ const VisionSection = () => {
       {/* Top Image & Text */}
       <div className= "flex flex-col md:flex-row items-center md:items-start gap-8 sm:gap-12">
         {/* Image */}
-        <div className="w-full  lg:w-2/3 h-[600px] flex justify-center">
+        <div className="w-full lg:w-2/3 flex justify-center">
           <img
             src="/SCENE 2.png" // Replace with your actual image path
             alt="Aerial Vision"
-            className="w-[350px] md:w-full h-[250px] md:h-[600px]   object-cover"
+            className="w-[350px] md:w-full h-[250px] md:h-[500px] rounded-lg object-cover"
           />
         </div>
           
@@ -30,7 +30,7 @@ const VisionSection = () => {
             rooted in sustainable materiality, refined aesthetics, and
             intentional spaces.
           </p>
-          <button className="mr-50 md:ml-44 self-center md:self-start bg-white text-[#0B2204] text-xs sm:text-sm font-semibold px-4 sm:px-5 py-2 rounded-full transition hover:bg-[#393F36] hover:text-white hover:cursor-pointer ">
+          <button className="mr-44 md:ml-44 self-center md:self-start bg-white text-[#0B2204] text-xs sm:text-sm font-semibold px-4 sm:px-5 py-2 rounded-full transition hover:bg-[#393F36] hover:text-white hover:cursor-pointer ">
             GET IN TOUCH
           </button>
         </div>

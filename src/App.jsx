@@ -9,6 +9,8 @@ import Blogs from './pages/Blogs.jsx'
 import { Contact } from 'lucide-react'
 import Contacts from './pages/Contacts.jsx'
 import Project from './pages/Project.jsx'
+import BlogDetail from './pages/BlogDetails.jsx'
+import ProjectDetail from './pages/ProjectDetail.jsx'
 
 function App() {
 
@@ -25,7 +27,9 @@ function App() {
         <Route path ='/blogs' element={<Blogs/>} />
         <Route path='/contact' element={<Contacts/>} />
         <Route path='/projects' element={<Project/>} />
-      </Routes>
+        <Route path='/projectdetails' element={<ProjectDetail/>}   /> 
+        <Route path='/blogdetails' element ={<BlogDetail/>}/>
+      </Routes> 
       <Footer/>
     </Router>
           
