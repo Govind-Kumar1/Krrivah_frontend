@@ -6,11 +6,11 @@ const VisionSection = () => {
       {/* Top Image & Text */}
       <div className= "flex flex-col md:flex-row items-center md:items-start gap-8 sm:gap-12">
         {/* Image */}
-        <div className="w-full lg:w-2/3 flex justify-center">
+        <div className="w-full  lg:w-2/3 h-[600px] flex justify-center">
           <img
             src="/SCENE 2.png" // Replace with your actual image path
             alt="Aerial Vision"
-            className="w-[350px] md:w-full h-[250px] md:h-[500px] rounded-lg object-cover"
+            className="w-[350px] md:w-full h-[250px] md:h-[600px]   object-cover"
           />
         </div>
           
