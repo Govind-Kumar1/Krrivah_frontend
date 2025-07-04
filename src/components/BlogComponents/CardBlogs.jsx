@@ -142,7 +142,7 @@ export default function BlogGrid() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {paginatedPosts.map((post) => (
-            <Link to="/blogdetail">
+            <Link to="/blogdetails">
               <div key={post.id} className="bg-white overflow-hidden shadow-sm">
                 <img
                   src={post.image}
