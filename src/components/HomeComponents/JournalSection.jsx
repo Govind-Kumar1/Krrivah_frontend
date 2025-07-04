@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { ChevronRight } from "lucide-react";
 
 const posts = [
@@ -29,16 +29,6 @@ const posts = [
 ];
 
 const JournalSection = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  // Auto-scroll every 1 second for mobile carousel
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % posts.length);
-    }, 1000);
-    return () => clearInterval(timer);
-  }, []);
-
   return (
     <section className="bg-[#EAEDE5] w-full py-10 md:py-24 px-6 md:px-16">
       <div className="flex flex-col lg:flex-row gap-10 lg:gap-20 items-start">
@@ -50,40 +40,49 @@ const JournalSection = () => {
           <h2 className="text-3xl sm:text-[56px] font-serif leading-[1.2] text-[#393F36] mb-12 w-full">
             BEYOND <br /> BLUEPRINTS.
           </h2>
-          <button className="flex items-center text-[#2E2E2E] gap-3 text-sm font-semibold uppercase tracking-wider hover:cursor-pointer">
+          <button className="flex items-center text-[#2E2E2E] gap-2 text-sm font-semibold uppercase tracking-wider hover:cursor-pointer">
             View All
-            {/* ChevronRight removed as per your request */}
+            <ChevronRight
+              className="border border-gray-400 rounded-full bg-white"
+              size={28}
+              strokeWidth={2.5}
+            />
           </button>
         </div>
 
         {/* Right Cards Section */}
         <div className="w-full">
-          {/* Mobile View: Single Card Carousel */}
-          <div className="sm:hidden w-full flex justify-center">
-            <div className="w-[300px] bg-white shadow-sm h-[450px] flex flex-col transition duration-500 ease-in-out">
-              <img
-                src={posts[currentIndex].image}
-                alt={posts[currentIndex].title}
-                className="w-full h-[220px] object-cover"
-              />
-              <div className="p-5 flex-1 flex flex-col">
-                <p className="text-xs font-semibold uppercase text-[#393F36] mb-2 tracking-wide">
-                  {posts[currentIndex].tag}
-                  <span className="text-[#828282]"> • {posts[currentIndex].date}</span>
-                </p>
-                <h3 className="text-md font-semibold text-[#2E2E2E] mb-2">
-                  {posts[currentIndex].title}
-                </h3>
-                <p className="text-sm text-[#5F5F5F] leading-relaxed">
-                  {posts[currentIndex].description}
-                </p>
-              </div>
+          {/* Mobile View: Horizontal Scroll Carousel */}
+          <div className="sm:hidden w-full overflow-x-auto">
+            <div className="flex gap-6 w-max px-2">
+              {posts.map((post, index) => (
+                <div
+                  key={index}
+                  className="min-w-[280px] bg-white shadow-sm h-[450px] flex-shrink-0 rounded-md overflow-hidden"
+                >
+                  <img
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full h-[220px] object-cover"
+                  />
+                  <div className="p-5 flex-1 flex flex-col">
+                    <p className="text-xs font-semibold uppercase text-[#393F36] mb-2 tracking-wide">
+                      {post.tag}
+                      <span className="text-[#828282]"> • {post.date}</span>
+                    </p>
+                    <h3 className="text-md font-semibold text-[#2E2E2E] mb-2">
+                      {post.title}
+                    </h3>
+                    <p className="text-sm text-[#5F5F5F] leading-relaxed">
+                      {post.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
 
-          {/* Arrow at bottom removed for auto-scroll */}
-
-          {/* Desktop Grid View (unchanged) */}
+          {/* Desktop Grid View */}
           <div className="hidden sm:grid grid-cols-2 lg:grid-cols-3 gap-10 mt-6">
             {posts.map((post, index) => (
               <div
@@ -108,7 +107,7 @@ const JournalSection = () => {
                   </p>
                 </div>
               </div>
-            ))} 
+            ))}
           </div>
         </div>
       </div>
