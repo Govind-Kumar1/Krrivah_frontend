@@ -144,9 +144,6 @@ const FeaturedProjects = () => {
 
 
 </div>
-
-
-
         {/* Next Project (Right) */}
         <div className="  w-[420px] h-[600px] overflow-hidden shadow-md hidden lg:block">
           <img
