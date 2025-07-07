@@ -65,7 +65,7 @@ const HomeHero = () => {
 
             {/* Desktop Hero Content */}
             <div className="hidden md:block absolute z-20 bottom-24 right-[2vw] max-w-[28vw]">
-                <h2 className="text-[2rem] font-light mb-6 tracking-wider leading-tight">
+                <h2 className="text-[2rem] font-light mb-6 tracking-wider font-merchant leading-tight">
                     {slides[current].title}
                 </h2>
                 <p className="text-[16px] font-normal leading-5 text-white/90">
