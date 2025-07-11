@@ -47,7 +47,7 @@ const CraftedSection = () => {
 
   return (
     <section className="w-full  py-12 flex flex-col items-center bg-white relative">
-      <h2 className="relative top-20 text-center text-[40px] md:text-[64px] leading-tight font-serif text-[#0B2204] mb-10">
+      <h2 className="relative top-20 text-center text-[40px] lg:text-[64px] leading-tight font-serif text-[#0B2204] mb-10">
         CRAFTED WITH PURPOSE. <br /> DEFINED BY DESIGN.
       </h2>
 
@@ -59,7 +59,7 @@ const CraftedSection = () => {
               key={idx}
               onMouseEnter={() => setIsPaused(true)}
               onMouseLeave={() => setIsPaused(false)}
-              className={`w-[150px] h-[180px] md:w-[521px] md:h-[511px] overflow-hidden ${
+              className={`w-[150px] h-[180px] lg:w-[521px] lg:h-[511px] overflow-hidden ${
                 idx % 2 === 1 ? "mt-0 md:mt-20" : "mt-4"
               }`}
             >

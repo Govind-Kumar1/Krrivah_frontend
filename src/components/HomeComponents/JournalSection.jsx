@@ -30,11 +30,11 @@ const posts = [
 
 const JournalSection = () => {
 	return (
-		<section className="bg-[#EAEDE5] w-full py-10 md:py-24 px-6 md:px-16">
+		<section className="bg-[#EAEDE5] w-full py-10 lg:py-24 px-6 lg:px-16">
 			<div className="flex flex-col lg:flex-row gap-10 lg:gap-20 items-start">
 				{/* Left Title */}
 				<div className="flex-1">
-					<p className="text-[18px] text-[#5F5F5F] font-medium mb-10 md:mb-40 uppercase tracking-widest">
+					<p className="text-[18px] text-[#5F5F5F] font-medium mb-10 lg:mb-40 uppercase tracking-widest">
 						Journal
 					</p>
 					<h2 className="text-3xl sm:text-[56px] font-serif leading-[1.2] text-[#393F36] mb-12 w-full">
