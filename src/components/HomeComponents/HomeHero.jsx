@@ -48,7 +48,7 @@ const HomeHero = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent z-10"></div>
 
             {/* Desktop Left Side Number Indicators */}
-            <div className="hidden md:flex absolute z-20 top-1/2 -translate-y-1/2 left-6 text-[30px] tracking-wide leading-[3rem] flex-col gap-0">
+            <div className="hidden lg:flex absolute z-20 top-1/2 -translate-y-1/2 left-6 text-[30px] tracking-wide leading-[3rem] flex-col gap-0">
                 {slides.map((_, idx) => (
                     <div
                         key={idx}
@@ -64,7 +64,7 @@ const HomeHero = () => {
             </div>
 
             {/* Desktop Hero Content */}
-            <div className="hidden md:block absolute z-20 bottom-24 right-[2vw] max-w-[28vw]">
+            <div className="hidden lg:block absolute z-20 bottom-24 right-[2vw] max-w-[28vw]">
                 <h2 className="text-[2rem] font-light mb-6 tracking-wider font-merchant leading-tight">
                     {slides[current].title}
                 </h2>
@@ -77,20 +77,20 @@ const HomeHero = () => {
             </div>
 
             {/* Desktop Brand Text */}
-            <div className="hidden md:block absolute z-20 bottom-20 left-6 font-merchant text-[100px] leading-[80%] tracking-[0px] uppercase">
+            <div className="hidden lg:block absolute z-20 bottom-20 left-6 font-merchant text-[100px] leading-[80%] tracking-[0px] uppercase">
                 {slides[current].brand}
             </div>
 
             {/* ---------- Mobile View ---------- */}
              {/* ---------- Mobile View ---------- */}
-<div className="md:hidden relative z-20 flex flex-col justify-between min-h-screen px-6 py-10">
+<div className="lg:hidden relative z-20 flex flex-col justify-between min-h-screen px-6 py-10">
     {/* Brand Text */}
-    <h1 className=" mt-24 md:mt-0 font-merchant text-7xl md:text-6xl font-light leading-tight tracking-wide">
+    <h1 className=" mt-24 lg:mt-0 font-merchant text-7xl lg:text-6xl font-light leading-tight tracking-wide">
         {slides[current].brand}
     </h1>
 
     {/* Title */}
-    <h2 className="text-4xl font-light uppercase tracking-wide mt-30 md:mt-10">
+    <h2 className="text-4xl font-light uppercase tracking-wide mt-30 lg:mt-10">
         {slides[current].title}
     </h2>
 
