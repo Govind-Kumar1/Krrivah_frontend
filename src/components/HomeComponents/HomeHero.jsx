@@ -17,6 +17,7 @@ const slides = [
         brand: 'KRRIVAH',
     },
     {
+
         image: '/SCENE 12.png',
         title: 'CRAFTED FOR LIVING',
         description:
@@ -56,6 +57,7 @@ const HomeHero = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent z-10"></div>
 
             {/* Desktop Left Side Number Indicators */}
+
             <div className="hidden lg:flex absolute z-20 top-1/2 -translate-y-1/2 left-6 text-[30px] tracking-wide leading-[3rem] flex-col gap-0">
                 {slides.map((_, idx) => (
                     <div
@@ -72,7 +74,9 @@ const HomeHero = () => {
             </div>
 
             {/* Desktop Hero Content */}
+
             <div className="hidden lg:block absolute z-20 bottom-24 right-[2vw] max-w-[28vw]">
+
                 <h2 className="text-[2rem] font-light mb-6 tracking-wider font-merchant leading-tight">
                     {slides[current].title}
                 </h2>
@@ -86,6 +90,7 @@ const HomeHero = () => {
 
             {/* Desktop Brand Text */}
             <div className="hidden lg:block absolute z-20 bottom-20 left-6 font-merchant text-[100px] leading-[80%] tracking-[0px] uppercase">
+
                 {slides[current].brand}
             </div>
 
@@ -98,7 +103,9 @@ const HomeHero = () => {
     </h1>
 
     {/* Title */}
+ 
     <h2 className="text-4xl font-light uppercase tracking-wide mt-30 lg:mt-10">
+ 
         {slides[current].title}
     </h2>
 

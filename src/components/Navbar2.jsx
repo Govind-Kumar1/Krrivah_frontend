@@ -27,7 +27,9 @@ const Navbar2 = () => {
     <nav>
       <div className="top-0 z-20 w-full border-b border-gray-200 text-gray-900 flex justify-between items-center px-[5.5vw] pt-[2.5vh] py-3">
         {/* Logo */}
+ 
         <div className="flex items-center gap-2 -ml-10 lg:-ml-20">
+ 
           <Link to="/">
             <img
               src="/Logo (2).png"
@@ -38,7 +40,9 @@ const Navbar2 = () => {
         </div>
 
         {/* Desktop Nav */}
+
         <div className="hidden lg:flex gap-[4vw] font-sans font-semibold text-[12px] leading-[100%] tracking-[2px] uppercase">
+ 
           {navLinks.map((link) => (
             <NavLink
               key={link.name}
@@ -51,7 +55,9 @@ const Navbar2 = () => {
         </div>
 
         {/* Mobile Hamburger Icon */}
+ 
         <div className="lg:hidden relative z-50">
+ 
           <button onClick={() => setMenuOpen(!menuOpen)} className="text-black">
             {menuOpen ? (
               <X size={28} />
@@ -74,7 +80,9 @@ const Navbar2 = () => {
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3 }}
+ 
             className="lg:hidden flex flex-col items-center gap-4 px-[5.5vw] pb-6 font-sans font-semibold text-[12px] leading-[100%] tracking-[2px] uppercase bg-white border-b border-gray-200 z-40"
+ 
           >
             {navLinks.map((link) => (
               <NavLink

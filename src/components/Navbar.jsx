@@ -45,18 +45,22 @@ const Navbar = () => {
       <div className="flex justify-between items-center px-[5.5vw] py-[2.5vh]">
 
         {/* Left: Logo */}
+ 
         <div className="flex items-center gap-2 -ml-8 lg:-ml-20">
+ 
           <Link to="/">
             <img
               src="/Logo.png"
               alt="Logo"
               className="h-14 w-[220px] object-contain cursor-pointer"
             />
+ 
           </Link> 
         </div>
 
         {/* Right: Desktop Navigation */}
         <div className="hidden lg:flex gap-[4vw] font-sans font-semibold text-[12px] leading-[100%] tracking-[2px] uppercase">
+ 
           {navLinks.map((link) => (
             <NavLink
               key={link.name}
@@ -69,7 +73,9 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Hamburger Icon */}
+ 
         <div className="lg:hidden relative z-50">
+ 
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="text-white"

@@ -2,7 +2,9 @@ import React from 'react';
 
 const DesignSection = () => {
   return (
+ 
     <section className="bg-white w-full text-black px-4 lg:px-12 py-20 overflow-hidden">
+ 
       <div className=" grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
 
         {/* Left Column - Heading */}

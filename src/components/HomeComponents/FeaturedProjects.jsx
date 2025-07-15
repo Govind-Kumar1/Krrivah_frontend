@@ -128,6 +128,8 @@ const FeaturedProjects = () => {
     <div className="absolute inset-0  " />
   </div>
  
+ 
+ 
   {/* Description + Button */}
 {/* Description + Button */}
 <div className="w-full bg-white text-black p-6 flex flex-col items-center gap-4 md:flex-row ">
@@ -176,6 +178,4 @@ const FeaturedProjects = () => {
 
 export default FeaturedProjects;
 
-
-
-
+ 

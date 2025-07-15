@@ -117,3 +117,4 @@ const JournalSection = () => {
 
 export default JournalSection;
  
+ 

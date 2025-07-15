@@ -5,6 +5,7 @@ const AboutSection = () => {
   const navigate = useNavigate();
 
   return (
+ 
     <section className="w-full h-full min-h-screen bg-[#e5e6e1] py-[12vh] px-[2vw] font-sans flex flex-col lg:flex-row items-center">
       <div className="px-2 flex flex-col lg:flex-row w-full gap-8 lg:gap-22 justify-between items-center lg:items-start h-full"> 
 
@@ -17,36 +18,43 @@ const AboutSection = () => {
             ROOTED IN<br className="hidden lg:block" />
             DESIGN,<br className="hidden lg:block" />
             <span className="inline-block mt-1 lg:mt-2">DRIVEN BY</span><br className="hidden lg:block" />
+
             PURPOSE.
           </h2>
         </div>
 
         {/* Center Image */}
+ 
         <div className="h-[470px] w-[90%] max-w-[80vw] sm:w-[345px] lg:w-[36vw] flex justify-center mt-6 lg:mt-0">
           <img 
             src="/SCENE 3.png"
             alt="About Krrivah"
             className="w-full h-auto lg:h-[630px] object-cover shadow-md"
+
           />
         </div>
 
         {/* Right Description */}
+ 
         <div className="w-full lg:w-[29vw] flex flex-col text-left mt-6 lg:mt-0 text-gray-700 text-sm leading-relaxed">
           <p className="mb-6 lg:mb-14 text-[14px] lg:text-[16px] text-[#393F36] leading-5">
+ 
             Krrivah is more than a development brand — it’s a vision brought to life through architecture. 
             With a passion for design and a commitment to quality, we create living spaces 
             that reflect a deeper understanding of form, function, and feeling.
           </p>
           <button
+ 
             className="lg:mr-60 lg:self-center self-start px-4 lg:px-6 py-2 bg-white rounded-full font-bold text-[12px] lg:text-[16px] shadow-sm hover:bg-[#393F36] hover:text-white transition hover:cursor-pointer"
             onClick={() => navigate("/about")}
           >
             LEARN MORE
           </button> 
+ 
         </div>
       </div>
     </section>
   );
 };
-
 export default AboutSection; 
+ 

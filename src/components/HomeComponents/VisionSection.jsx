@@ -49,19 +49,17 @@ const VisionSection = () => {
 
         {/* Desktop View */}
         <div className="hidden sm:grid grid-cols-3 md:grid-cols-4 grid-rows-3 md:grid-rows-1 gap-2 md:gap-2 m-4">
-        
           <StatCard end={12} suffix="+" label="years of design expertise shaping refined living environments." />
           <StatCard end={3} suffix="+" label="premium amenities crafted for seamless luxury and leisure." />
-         <StatCard
-  end={200}
-  suffix="K sq.ft."
-  label="of design-first development redefining urban living."
-  fontSize="text-4xl lg:text-6xl"
-/>
-
+          <StatCard
+            end={200}
+            suffix="K sq.ft."
+            label="of design-first development redefining urban living."
+            fontSize="text-4xl lg:text-6xl"
+          />
           <StatCard end={100} suffix="%" label="commitment to timeless architecture, rooted in thoughtful design." />
         </div>
-      </div> 
+      </div>
     </section>
   );
 };
