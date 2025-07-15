@@ -1,4 +1,5 @@
 import React from "react";
+import StatCard from "../HomeComponents/StartCard.jsx"; // Adjust the path if needed
 
 const VisionSection = () => {
   return (
@@ -8,14 +9,14 @@ const VisionSection = () => {
         {/* Image */}
         <div className="w-full lg:w-2/3 flex justify-center">
           <img
-            src="/SCENE 2.png"
+            src="/SCENE 2.png" 
             alt="Aerial Vision"
             className="w-[350px] lg:w-full h-[250px] lg:h-[500px] rounded-lg object-cover"
           />
         </div>
 
         {/* Right Content */}
-        <div className="w-full lg:w-1/2 text-left flex flex-col mt-6 lg:mt-0 lg:items-start lg:text-left">
+        <div className="w-full lg:w-1/2 text-left flex flex-col mt-6 lg:mt-0 items-start">
           <p className="text-[16px] lg:text-[18px] tracking-widest text-gray-400 uppercase mb-2 sm:mb-4">
             Our Vision
           </p>
@@ -24,13 +25,13 @@ const VisionSection = () => {
             FORM, LIGHT, AND <br />
             LANDSCAPE.
           </h2>
-          <p className="text-xs self-end text-left sm:text-sm text-gray-300 leading-relaxed mb-4 sm:mb-6 w-full max-w-[350px] lg:max-w-[420px] break-words">
+          <p className="text-xs sm:text-sm text-gray-300 leading-relaxed mb-4 sm:mb-6 w-full max-w-[420px] break-words">
             At the heart of every Krrivah project lies a design-first approach.
             Our process blends architectural heritage with modern living, rooted
             in sustainable materiality, refined aesthetics, and intentional
             spaces.
           </p>
-          <button className="mr-44 lg:ml-44 self-center lg:self-start bg-white text-[#0B2204] text-xs sm:text-sm font-semibold px-4 sm:px-5 py-2 rounded-full transition hover:bg-[#393F36] hover:text-white hover:cursor-pointer">
+          <button className="bg-white text-[#0B2204] text-xs sm:text-sm font-semibold px-4 sm:px-5 py-2 rounded-full transition hover:bg-[#393F36] hover:text-white hover:cursor-pointer">
             GET IN TOUCH
           </button>
         </div>
@@ -38,69 +39,29 @@ const VisionSection = () => {
 
       {/* Bottom Stats */}
       <div className="mt-20 text-white text-left">
-        {/* Mobile View: 2x2 layout */}
+        {/* Mobile View */}
         <div className="grid grid-cols-2 gap-8 sm:hidden">
-          <div>
-            <h3 className="text-4xl font-serif mb-2">12+</h3>
-            <p className="text-sm text-gray-400 max-w-xs">
-              years of design expertise shaping refined living environments.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-4xl font-serif mb-2">3+</h3>
-            <p className="text-sm text-gray-400 max-w-xs">
-              premium amenities crafted for seamless luxury and leisure.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-4xl font-serif mb-2">
-              200K<span className="text-base align-top"> sq. ft.</span>
-            </h3>
-            <p className="text-sm text-gray-400 max-w-xs">
-              of design-first development redefining urban living.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-4xl font-serif mb-2">100%</h3>
-            <p className="text-sm text-gray-400 max-w-xs">
-              commitment to timeless architecture, rooted in thoughtful design.
-            </p>
-          </div>
+          <StatCard end={12} suffix="+" label="years of design expertise shaping refined living environments." fontSize="text-4xl" />
+          <StatCard end={3} suffix="+" label="premium amenities crafted for seamless luxury and leisure." fontSize="text-4xl" />
+          <StatCard end={200} suffix="K sq. ft." label="of design-first development redefining urban living." fontSize="text-4xl" />
+          <StatCard end={100} suffix="%" label="commitment to timeless architecture, rooted in thoughtful design." fontSize="text-4xl" />
         </div>
 
         {/* Desktop View */}
-        <div className="hidden sm:grid grid-cols-1 sm:grid-cols-5 gap-12">
-          <div className="col-span-3"></div>
-          <div>
-            <h3 className="text-7xl font-serif mb-2">12+</h3>
-            <p className="text-sm text-gray-400 max-w-xs">
-              years of design expertise shaping refined living environments.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-7xl font-serif mb-2">3+</h3>
-            <p className="text-sm text-gray-400 max-w-xs">
-              premium amenities crafted for seamless luxury and leisure.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-7xl font-serif mb-2">
-              200K<span className="text-base align-top"> sq. ft.</span>
-            </h3>
-            <p className="text-sm text-gray-400 max-w-xs">
-              of design-first development redefining urban living.
-            </p>
-          </div>
-          <div className="col-span-5"></div>
-          <div className="col-span-2"></div>
-          <div>
-            <h3 className="text-7xl font-serif mb-2">100%</h3>
-            <p className="text-sm text-gray-400 max-w-xs">
-              commitment to timeless architecture, rooted in thoughtful design.
-            </p>
-          </div>
+        <div className="hidden sm:grid grid-cols-3 md:grid-cols-4 grid-rows-3 md:grid-rows-1 gap-2 md:gap-2 m-4">
+        
+          <StatCard end={12} suffix="+" label="years of design expertise shaping refined living environments." />
+          <StatCard end={3} suffix="+" label="premium amenities crafted for seamless luxury and leisure." />
+         <StatCard
+  end={200}
+  suffix="K sq.ft."
+  label="of design-first development redefining urban living."
+  fontSize="text-4xl lg:text-6xl"
+/>
+
+          <StatCard end={100} suffix="%" label="commitment to timeless architecture, rooted in thoughtful design." />
         </div>
-      </div>
+      </div> 
     </section>
   );
 };

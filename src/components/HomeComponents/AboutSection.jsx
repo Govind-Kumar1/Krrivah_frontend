@@ -22,7 +22,7 @@ const AboutSection = () => {
         </div>
 
         {/* Center Image */}
-        <div className="h-[470px] w-[90%] sm:w-[345px] lg:w-[36vw] flex justify-center mt-6 lg:mt-0">
+        <div className="h-[470px] w-[90%] max-w-[80vw] sm:w-[345px] lg:w-[36vw] flex justify-center mt-6 lg:mt-0">
           <img 
             src="/SCENE 3.png"
             alt="About Krrivah"

@@ -17,12 +17,20 @@ const slides = [
         brand: 'KRRIVAH',
     },
     {
-        image: '/SCENE 24.png',
-        title: 'ELEGANCE REDEFINED',
+        image: '/SCENE 12.png',
+        title: 'CRAFTED FOR LIVING',
         description:
-            'Discover spaces that blend modern architecture with timeless elegance, offering a sanctuary for inspired living.',
-        brand: 'SERENITY',
+            'Innara creates deeply personal living spaces that inspire and endure—a seamless fusion of natural textures, warm tones, and thoughtful craftsmanship, designed to elevate the modern lifestyle with quiet elegance and meaning.',
+        brand: 'INNARA',
     },
+    {
+        image: '/SCENE 17.png',
+        title: 'DESIGNED FOR YOU',
+        description:
+            'Experience a new dimension of comfort and style with our bespoke villas, where every detail is crafted for your unique lifestyle.',
+        brand: 'KRRIVAH',
+    },
+     
 ];
 
 const HomeHero = () => {
