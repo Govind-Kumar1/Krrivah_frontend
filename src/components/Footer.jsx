@@ -6,11 +6,9 @@ const Footer = () => {
   return (
     <footer className="w-full bg-white border-t border-gray-100 text-[#0E0E0E]">
       {/* Top Row */}
- 
       <div className="flex flex-col lg:flex-row justify-between items-center px-4 lg:px-16 py-6 gap-6">
         {/* Logo */}
         <div className="flex justify-center lg:justify-start">
- 
           <Link to="/">
             <img
               src="/Logo (2).png"
@@ -21,9 +19,7 @@ const Footer = () => {
         </div>
 
         {/* Nav Links */}
- 
         <ul className="flex flex-wrap justify-center gap-4 lg:gap-18 text-[10px] lg:text-sm font-semibold tracking-wider text-[#0E0E0E]">
- 
           <li><Link to="/about" className="hover:text-gray-600">ABOUT</Link></li>
           <li><Link to="/projects" className="hover:text-gray-600">PROJECTS</Link></li>
           <li><Link to="/design" className="hover:text-gray-600">DESIGN</Link></li>
@@ -32,9 +28,7 @@ const Footer = () => {
         </ul>
 
         {/* Social Icons (Desktop Only) */}
- 
         <div className="hidden lg:flex items-center gap-6">
- 
           <a
             href="https://facebook.com/"
             target="_blank"
@@ -57,9 +51,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar: Mobile View Only */}
- 
       <div className="flex flex-col lg:hidden justify-between items-start px-4 pb-2 text-xs text-gray-500">
- 
         <div className="w-full flex justify-between items-center mb-2">
           {/* Left: Icons */}
           <div className="flex gap-6">

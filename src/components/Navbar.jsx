@@ -46,7 +46,9 @@ const Navbar = () => {
 
         {/* Left: Logo */}
  
+ 
         <div className="flex items-center gap-2 -ml-8 lg:-ml-20">
+ 
  
           <Link to="/">
             <img
@@ -55,11 +57,13 @@ const Navbar = () => {
               className="h-14 w-[220px] object-contain cursor-pointer"
             />
  
+ 
           </Link> 
         </div>
 
         {/* Right: Desktop Navigation */}
         <div className="hidden lg:flex gap-[4vw] font-sans font-semibold text-[12px] leading-[100%] tracking-[2px] uppercase">
+ 
  
           {navLinks.map((link) => (
             <NavLink
@@ -74,7 +78,9 @@ const Navbar = () => {
 
         {/* Mobile Hamburger Icon */}
  
+ 
         <div className="lg:hidden relative z-50">
+ 
  
           <button
             onClick={() => setMenuOpen(!menuOpen)}

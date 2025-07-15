@@ -2,13 +2,11 @@ import React from 'react';
 
 const DesignSection = () => {
   return (
- 
     <section className="bg-white w-full text-black px-4 lg:px-12 py-20 overflow-hidden">
- 
-      <div className=" grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
-
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+        
         {/* Left Column - Heading */}
-        <div className="space-y-6 flex flex-col justify-between h-full  ">
+        <div className="space-y-6 flex flex-col justify-between h-full">
           <h4 className="text-sm uppercase tracking-wider text-black">Design Philosophy</h4>
           <h2 className="font-serif text-5xl lg:text-5xl leading-16 tracking-normal text-[#3E3B36]">
             DESIGNS <br /> THAT LIVE <br /> BEYOND THE <br /> BLUEPRINT
@@ -18,15 +16,14 @@ const DesignSection = () => {
         {/* Middle Column - Large Image */}
         <div className="flex justify-center">
           <img
-            src="/Layer_1.png"  
+            src="/Layer_1.png"
             alt="Architectural Blueprint Section"
             className="max-w-[400px] lg:max-w-[800px] xl:max-w-[900px] h-auto object-contain"
           />
         </div>
 
-        {/* Right Column - Text and Button */} 
+        {/* Right Column - Text and Button */}
         <div className="flex flex-col space-y-5 text-gray-800">
-          {/* Hide these paragraphs on mobile, show on sm and above */}
           <p className="hidden sm:block text-base leading-relaxed ml-12">
             At Krrivah, design is not just how a space looks — it’s how it makes you feel.
           </p>
@@ -37,7 +34,7 @@ const DesignSection = () => {
             From open courtyards that breathe to textures that age gracefully — every decision is a quiet nod to balance, longevity, and livability.
           </p>
 
-          <button className="hidden sm:block  mt- px-6 py-2 border border-[#2F352D] text-[#2F352D] rounded-full text-sm font-medium hover:bg-[#2F352D] hover:text-white transition duration-300 w-fit ml-12 ">
+          <button className="hidden sm:block mt-4 px-6 py-2 border border-[#2F352D] text-[#2F352D] rounded-full text-sm font-medium hover:bg-[#2F352D] hover:text-white transition duration-300 w-fit ml-12">
             LEARN MORE
           </button>
         </div>
@@ -48,4 +45,3 @@ const DesignSection = () => {
 };
 
 export default DesignSection;
-

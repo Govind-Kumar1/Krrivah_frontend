@@ -1,4 +1,5 @@
 import React from "react";
+ 
 import StatCard from "../HomeComponents/StartCard.jsx"; // Adjust the path if needed
 
 const VisionSection = () => {
@@ -21,10 +22,12 @@ const VisionSection = () => {
             Our Vision
           </p>
           <h2 className="relative text-2xl sm:text-3xl lg:text-4xl xl:text-6xl font-merchant text-[#E3E8E0] leading-tight mb-4 sm:mb-6">
+ 
             IN HARMONY WITH <br />
             FORM, LIGHT, AND <br />
             LANDSCAPE.
           </h2>
+ 
           <p className="text-xs sm:text-sm text-gray-300 leading-relaxed mb-4 sm:mb-6 w-full max-w-[420px] break-words">
             At the heart of every Krrivah project lies a design-first approach.
             Our process blends architectural heritage with modern living, rooted
@@ -32,12 +35,14 @@ const VisionSection = () => {
             spaces.
           </p>
           <button className="bg-white text-[#0B2204] text-xs sm:text-sm font-semibold px-4 sm:px-5 py-2 rounded-full transition hover:bg-[#393F36] hover:text-white hover:cursor-pointer">
+ 
             GET IN TOUCH
           </button>
         </div>
       </div>
 
       {/* Bottom Stats */}
+ 
       <div className="mt-20 text-white text-left">
         {/* Mobile View */}
         <div className="grid grid-cols-2 gap-8 sm:hidden">
@@ -60,6 +65,7 @@ const VisionSection = () => {
           <StatCard end={100} suffix="%" label="commitment to timeless architecture, rooted in thoughtful design." />
         </div>
       </div>
+ 
     </section>
   );
 };

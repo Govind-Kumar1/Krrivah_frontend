@@ -82,7 +82,7 @@ const JournalSection = () => {
             </div>
           </div>
 
-          {/* Desktop View ≥1350px */}
+          {/* Desktop Grid View */}
           <div className="hidden xl:grid grid-cols-3 gap-10 mt-6">
             {posts.map((post, index) => (
               <div
@@ -116,5 +116,3 @@ const JournalSection = () => {
 };
 
 export default JournalSection;
- 
- 

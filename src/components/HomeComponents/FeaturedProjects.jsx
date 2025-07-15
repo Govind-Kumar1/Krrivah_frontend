@@ -42,7 +42,6 @@ const projects = [
     description:
       "Serenity offers peaceful homes with contemporary design and lush surroundings.",
   },
-  // Add more projects as needed
 ];
 
 const FeaturedProjects = () => {
@@ -58,10 +57,10 @@ const FeaturedProjects = () => {
   };
 
   return (
-    <section className=" w-full py-24">
+    <section className="w-full py-24">
       {/* Header */}
       <div className="flex justify-between items-center mb-18 px-10">
-        <h2 className=" text-[14px] md:text-xl font-medium tracking-widest text-[#5F5F5F] uppercase">
+        <h2 className="text-[14px] md:text-xl font-medium tracking-widest text-[#5F5F5F] uppercase">
           Featured Projects
         </h2>
         <button className="text-sm font-semibold border border-gray-400 md:h-[40px] w-[103px] rounded-full text-[#0B2204] px-4 py-2 hover:bg-[#393F36] hover:cursor-pointer hover:text-white">
@@ -72,23 +71,20 @@ const FeaturedProjects = () => {
       {/* Carousel */}
       <div className="relative flex items-end gap-40 justify-center">
         {/* Previous Project (Left) */}
-        <div className="w-[420px] h-[600px]  relative   overflow-hidden hidden lg:block">
+        <div className="w-[420px] h-[600px] relative overflow-hidden hidden lg:block">
           <img
-            src={
-              projects[(current - 1 + projects.length) % projects.length].image
-            }
+            src={projects[(current - 1 + projects.length) % projects.length].image}
             alt="Project Left"
             className="w-full h-full object-cover"
           />
-          <h3 className=" absolute text-[28px] z-20 font-serif ">
+          <h3 className="absolute text-[28px] z-20 font-serif">
             {projects[current].title}
           </h3>
-
           <div className="flex gap-2 text-xs font-semibold uppercase tracking-wide mb-4 flex-wrap">
             {projects[current].tags.map((tag, idx) => (
               <span
                 key={idx}
-                className=" rounded-full px-3 py-[6px] flex items-center gap-1"
+                className="rounded-full px-3 py-[6px] flex items-center gap-1"
               >
                 {tag}
               </span>
@@ -96,58 +92,50 @@ const FeaturedProjects = () => {
           </div>
         </div>
 
-       {/* Current Project (Center) */}
-<div className="w-full max-w-[460px]  flex flex-col mx-auto">
-  {/* Image with overlay */}
-  <div className="relative w-full h-[520px] md:h-[600px] px-4 md:px-0 overflow-hidden ">
-    <img 
-      src={projects[current].image}
-      alt={projects[current].title}
-      className="w-full h-full object-cover"
-    />
+        {/* Current Project (Center) */}
+        <div className="w-full max-w-[460px] flex flex-col mx-auto">
+          {/* Image with overlay */}
+          <div className="relative w-full h-[520px] md:h-[600px] px-4 md:px-0 overflow-hidden">
+            <img
+              src={projects[current].image}
+              alt={projects[current].title}
+              className="w-full h-full object-cover"
+            />
+            {/* Overlay: Title and tags */}
+            <div className="absolute bottom-0 left-0 w-full p-6 z-10">
+              <h3 className="text-[36px] leading-tight text-white font-serif mb-4">
+                {projects[current].title}
+              </h3>
+              <div className="flex gap-2 text-xs font-semibold uppercase tracking-wide mb-4 flex-wrap">
+                {projects[current].tags.map((tag, idx) => (
+                  <span
+                    key={idx}
+                    className="gap-2 px-3 py-[6px] rounded-full border border-white backdrop-blur-[5px] text-white flex items-center text-[12px]"
+                  >
+                    {tag.toLowerCase().includes("goa") && <LocationIcon />}
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
 
-    {/* Overlay: Title and tags */}
-    <div className="absolute bottom-0 left-0 w-full p-6 z-10">
-      <h3 className="text-[36px] leading-tight text-white font-serif mb-4">
-        {projects[current].title}
-      </h3>
+          {/* Description + Button */}
+          <div className="w-full bg-white text-black p-6 flex flex-col items-center gap-4 md:flex-row">
+            <p className="md:-ml-5 text-[14px] text-[#0E0E0E] leading-[1.5] text-center md:text-left">
+              {projects[current].description}
+            </p>
+            <button
+              className="w-[280px] border border-gray-300 text-sm font-semibold text-[#0B2204] hover:bg-[#393F36] hover:text-white px-4 py-3 rounded-full transition hover:cursor-pointer"
+              onClick={() => navigate("/ProjectDetails")}
+            >
+              LEARN MORE
+            </button>
+          </div>
+        </div>
 
-      <div className="flex gap-2 text-xs font-semibold uppercase tracking-wide mb-4 flex-wrap">
-        {projects[current].tags.map((tag, idx) => (
-          <span
-            key={idx}
-            className="gap-2 px-3 py-[6px] rounded-full border border-white  backdrop-blur-[5px] text-white flex items-center text-[12px]"
-          >
-            {tag.toLowerCase().includes("goa") && <LocationIcon />}
-            {tag}
-          </span>
-        ))}
-      </div> 
-    </div>
-
-    <div className="absolute inset-0  " />
-  </div>
- 
- 
- 
-  {/* Description + Button */}
-{/* Description + Button */}
-<div className="w-full bg-white text-black p-6 flex flex-col items-center gap-4 md:flex-row ">
-  <p className="md:-ml-5 text-[14px] text-[#0E0E0E] leading-[1.5] text-center md:text-left">
-    {projects[current].description}
-  </p>
-  <button
-    className="w-[280px] border border-gray-300 text-sm font-semibold text-[#0B2204] hover:bg-[#393F36] hover:text-white px-4 py-3 rounded-full transition hover:cursor-pointer"
-    onClick={() => navigate("/ProjectDetails")}
-  >
-    LEARN MORE
-  </button>
-</div>
-
-
-</div>
         {/* Next Project (Right) */}
-        <div className="  w-[420px] h-[600px] overflow-hidden shadow-md hidden lg:block">
+        <div className="w-[420px] h-[600px] overflow-hidden shadow-md hidden lg:block">
           <img
             src={projects[(current + 1) % projects.length].image}
             alt="Project Right"
@@ -177,5 +165,3 @@ const FeaturedProjects = () => {
 };
 
 export default FeaturedProjects;
-
- 
