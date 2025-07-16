@@ -1,5 +1,7 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import CarousalProject from "./CarousalProject";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { Mail, Phone } from "lucide-react";
 
 // ✅ Custom LocationIcon (SVG)
@@ -22,6 +24,23 @@ const LocationIcon = () => (
 );
 
 const HeroSection = () => {
+  const navigate = useNavigate();
+
+  const handleDownloadClick = () => {
+    toast.info("You have to fill the contact form first.", {
+      position: "top-center",
+      autoClose: 1500,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+    });
+
+    setTimeout(() => {
+      navigate("/contact");
+    }, 2600);
+  };
+
   return (
     <section className="min-h-screen px-2 w-full">
       <div className="sm:mx-2 md:flex w-full min-h-screen">
@@ -41,7 +60,7 @@ const HeroSection = () => {
           {/* Pills */}
           <div className="flex items-center gap-3 mb-6">
             <span className="bg-[#3E3F36] text-white text-[13px] font-semibold px-3 py-1 rounded-full flex gap-1.5 items-center">
-              VILLAS
+              VILLA AMENITIES
             </span>
             <span className="bg-[#3E3F36] text-white text-xs font-semibold px-3 py-1 rounded-full flex gap-1.5 items-center">
               <LocationIcon />
@@ -81,13 +100,16 @@ const HeroSection = () => {
             </p>
           </div>
 
-          {/* CTA Button */}
-          <Link
-            to="/projects/innara"
-            className="text-center inline-block mt-8 px-6 py-1.5 bg-white text-[#0B2204] font-semibold rounded-full border-2 border-[#E7E9E6] w-[95%] hover:bg-gray-200 transition"
+          {/* ✅ Updated Button */}
+          <button
+            onClick={handleDownloadClick}
+            className="text-center inline-block mt-8 px-6 py-1.5 bg-white text-[#0B2204] font-semibold rounded-full border-2 border-[#E7E9E6] w-[95%] hover:bg-gray-200 transition cursor-pointer "
           >
-            LEARN MORE
-          </Link>
+            DOWNLOAD BROCHURE
+          </button>
+
+          {/* ✅ Toast Container */}
+          <ToastContainer />
         </div>
 
         {/* Right Image & Slider */}

@@ -35,13 +35,13 @@ const projects = [
     description:
       "Krrivah blends modern architecture with nature, offering tranquil living in the heart of Goa.",
   },
-  {
-    title: "SERENITY",
-    image: "/SCENE 4.png",
-    tags: ["Apartments", "Anjuna, Goa"],
-    description:
-      "Serenity offers peaceful homes with contemporary design and lush surroundings.",
-  },
+  // {
+  //   title: "SERENITY",
+  //   image: "/SCENE 4.png",
+  //   tags: ["Apartments", "Anjuna, Goa"],
+  //   description:
+  //     "Serenity offers peaceful homes with contemporary design and lush surroundings.",
+  // },
 ];
 
 const FeaturedProjects = () => {

@@ -75,7 +75,7 @@ Frontend/.env.development
 Frontend/.cache
 Frontend/public/env.js
 
-
+// Banner // blog // Gallery// login
 # ===================== #
 # ✅ Backend (Node/Express)
 # ===================== #

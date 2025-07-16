@@ -1,5 +1,6 @@
 import React from "react";
 import { ChevronRight } from "lucide-react";
+import { useNavigate } from "react-router-dom"; // ✅ Step 1
 
 const posts = [
   {
@@ -29,6 +30,12 @@ const posts = [
 ];
 
 const JournalSection = () => {
+  const navigate = useNavigate(); // ✅ Step 2
+
+  const handleViewAllClick = () => {
+    navigate("/projects");
+  };
+
   return (
     <section className="bg-[#EAEDE5] w-full py-10 md:py-24 px-6 md:px-16">
       <div className="flex flex-col xl:flex-row gap-10 xl:gap-20 items-start">
@@ -40,7 +47,11 @@ const JournalSection = () => {
           <h2 className="text-3xl sm:text-[56px] font-serif leading-[1.2] text-[#393F36] mb-12 w-full">
             BEYOND <br /> BLUEPRINTS.
           </h2>
-          <button className="flex items-center text-[#2E2E2E] gap-2 text-sm font-semibold uppercase tracking-wider hover:cursor-pointer">
+          {/* ✅ Updated View All Button */}
+          <button
+            onClick={handleViewAllClick}
+            className="flex items-center text-[#2E2E2E] gap-2 text-sm font-semibold uppercase tracking-wider hover:cursor-pointer"
+          >
             View All
             <ChevronRight
               className="border border-gray-400 rounded-full bg-white"
@@ -58,12 +69,12 @@ const JournalSection = () => {
               {posts.map((post, index) => (
                 <div
                   key={index}
-                  className="w-[300px] bg-white shadow-sm h-[420px] flex-shrink-0 overflow-hidden rounded-md"
+                  className="w-[300px] bg-white shadow-sm h-[420px] flex-shrink-0 overflow-hidden"
                 >
                   <img
                     src={post.image}
                     alt={post.title}
-                    className="w-full h-[180px] object-cover rounded-t-md"
+                    className="w-full h-[180px] object-cover"
                   />
                   <div className="p-5 flex-1 flex flex-col">
                     <p className="text-xs font-semibold uppercase text-[#393F36] mb-2 tracking-wide">
@@ -87,12 +98,12 @@ const JournalSection = () => {
             {posts.map((post, index) => (
               <div
                 key={index}
-                className="bg-white overflow-hidden shadow-sm w-[300px] h-[450px] flex flex-col rounded-md"
+                className="bg-white overflow-hidden shadow-sm w-[300px] h-[450px] flex flex-col"
               >
                 <img
                   src={post.image}
                   alt={post.title}
-                  className="w-full h-[220px] object-cover rounded-t-md"
+                  className="w-full h-[220px] object-cover"
                 />
                 <div className="p-5 flex-1 flex flex-col">
                   <p className="text-xs font-semibold uppercase text-[#393F36] mb-2 tracking-wide">

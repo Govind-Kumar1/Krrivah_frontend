@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const slides = [
   {
@@ -10,23 +11,27 @@ const slides = [
   },
   {
     image: '/SCENE 17.png',
-    title: 'DESIGNED FOR YOU',
+    title: 'Elegance in Every Corner ',
     description:
-      'Experience a new dimension of comfort and style with our bespoke villas, where every detail is crafted for your unique lifestyle.',
-    brand: 'KRRIVAH',
+      ' Tucked away in Morjim, La Oceia brings you villa living inspired by Goa’s raw beauty. With fluid architecture and a deep respect for nature, it’s a home that lets you live slow, live light, and live well.',
+    brand: 'LA Oceia',
   },
-  {
-    image: '/SCENE 24.png',
-    title: 'ELEGANCE REDEFINED',
-    description:
-      'Discover spaces that blend modern architecture with timeless elegance, offering a sanctuary for inspired living.',
-    brand: 'SERENITY',
-  },
+  // {
+  //   image: '/SCENE 24.png',
+  //   title: 'ELEGANCE REDEFINED',
+  //   description:
+  //     'Discover spaces that blend modern architecture with timeless elegance, offering a sanctuary for inspired living.',
+  //   brand: 'SERENITY',
+  // },
 ];
 
 const HomeHero = () => {
   const [current, setCurrent] = useState(0);
+    const navigate = useNavigate(); // ✅ Step 2
 
+  const handleViewAllClick = () => {
+    navigate("/projects");
+  };
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrent((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
@@ -70,7 +75,7 @@ const HomeHero = () => {
         <p className="text-[16px] font-normal leading-5 text-white/90">
           {slides[current].description}
         </p>
-        <button className="mt-14 px-6 py-2 border border-[#E7E9E640] rounded-full text-[16px] tracking-wide hover:bg-[#393F36] hover:text-white transition hover:cursor-pointer">
+        <button onClick={handleViewAllClick} className="mt-14 px-6 py-2 border border-[#E7E9E640] rounded-full text-[16px] tracking-wide hover:bg-[#393F36] hover:text-white transition hover:cursor-pointer">
           LEARN MORE
         </button>
       </div>
@@ -99,7 +104,7 @@ const HomeHero = () => {
 
         {/* Button + Pagination */}
         <div className="flex items-center justify-between mt-10">
-          <button className="px-6 py-2 border border-gray-500 text-white text-sm font-semibold tracking-wide rounded-full hover:bg-gray-200 transition">
+          <button onClick={handleViewAllClick} className="px-6 py-2 border border-gray-500 text-white text-sm font-semibold tracking-wide rounded-full hover:bg-gray-200 transition">
             LEARN MORE
           </button>
 
