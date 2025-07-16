@@ -9,7 +9,7 @@ const FoundersSection = () => {
           Meet The Founders
         </h4>
         <h2 className="text-5xl md:text-7xl font-serif font-medium text-gray-900 leading-snug">
-          The Minds Behind <br /> Krrivah
+          The Minds Behind  <br /> Krrivah
         </h2>
 
         {/* Founder Cards */}

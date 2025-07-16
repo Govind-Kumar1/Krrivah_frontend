@@ -13,7 +13,7 @@ const slides = [
     image: '/SCENE 17.png',
     title: 'Elegance in Every Corner ',
     description:
-      ' Tucked away in Morjim, La Oceia brings you villa living inspired by Goa’s raw beauty. With fluid architecture and a deep respect for nature, it’s a home that lets you live slow, live light, and live well.',
+      'Tucked away in Morjim, La Oceia brings you villa living inspired by Goa’s raw beauty. With fluid architecture and a deep respect for nature, it’s a home that lets you live slow, live light, and live well.',
     brand: 'LA Oceia',
   },
   // {
