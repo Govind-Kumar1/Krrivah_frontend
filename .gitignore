@@ -1,13 +1,10 @@
-=======
->>>>>>> f7249c27404453ae5495e81f14abe71f89227320
+ 
 # Logs
 logs
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 # OS generated files
 .DS_Store
@@ -17,7 +14,7 @@ Thumbs.db
 .env
 .env.*
 
-
+node_modules
 # ===================== #
 # ✅ Frontend (React)
 # ===================== #
