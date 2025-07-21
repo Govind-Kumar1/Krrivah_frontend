@@ -6,13 +6,13 @@ const DesignSection = () => {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
         
         {/* Left Column - Heading */}
-        <div className="space-y-6 flex flex-col justify-between h-full">
+        <div className="space-y-7 flex flex-col justify-between  h-full">
           <h4 className="text-sm uppercase tracking-wider text-black">Design Philosophy</h4>
           <h2 className="font-serif text-5xl lg:text-5xl leading-16 tracking-normal text-[#3E3B36]">
-            DESIGNS <br /> THAT LIVE <br /> BEYOND THE <br /> BLUEPRINT
+            DESIGNS <br /> THAT  LIVE <br /> BEYOND THE <br /> BLUEPRINT
           </h2>
         </div>
-
+ 
         {/* Middle Column - Large Image */}
         <div className="flex justify-center">
           <img
