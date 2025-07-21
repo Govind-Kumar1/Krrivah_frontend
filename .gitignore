@@ -1,15 +1,3 @@
-<<<<<<< HEAD
-
-# ===================== #
-# ✅ Common Settings
-# ===================== #
-
-# Dependency folders
-node_modules/
-bower_components/
-
-=======
->>>>>>> feature-homepage-upstream
 =======
 >>>>>>> f7249c27404453ae5495e81f14abe71f89227320
 # Logs
@@ -80,7 +68,7 @@ Frontend/public/env.js
 # ✅ Backend (Node/Express)
 # ===================== #
 
-Backend/node_modules/
+Backend/node_modules/ 
 Backend/.env
 Backend/logs/
 Backend/debug.log
