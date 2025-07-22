@@ -24,14 +24,15 @@ const projects = [
   {
     title: "INNARA",
     image: "/SCENE 17.png",
-    tags: ["Villas & Apartments", "Moira, Goa"],
+    tags: ["V3 & 4 BHK Villas | 2 BHK Apartments", "Moira, Goa"],
     description:
       "Innara creates inspiring spaces — a mix of textures, warm tones, and craftsmanship for modern elegance.",
   },
   {
-    title: "KRRIVAH",
+    title: "LA OCEIA",
     image: "/SCENE 24.png",
-    tags: ["Luxury Villas", "Siolim, Goa"],
+  
+    tags: ["5 BHK Villas", " Morjim, Goa"],
     description:
       "Krrivah blends modern architecture with nature, offering tranquil living in the heart of Goa.",
   },
