@@ -2,7 +2,7 @@ import React from "react";
 import { ChevronRight } from "lucide-react";
 import { useNavigate } from "react-router-dom"; // ✅ Step 1
 
-const posts = [
+const posts = [ 
   {
     tag: "DESIGN",
     date: "JUNE 5, 2025",

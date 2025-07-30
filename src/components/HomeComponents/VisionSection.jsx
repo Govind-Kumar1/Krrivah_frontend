@@ -7,7 +7,7 @@ const VisionSection = () => {
     <section className="w-full bg-black text-white px-6 lg:px-10 py-10">
       {/* Top Image & Text */}
       <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 sm:gap-12">
-        {/* Image */}
+        {/* Image */} 
         <div className="w-full lg:w-2/3 flex justify-center">
           <img
             src="/SCENE 2.png" 
