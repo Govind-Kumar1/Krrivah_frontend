@@ -23,7 +23,7 @@ const LocationIcon = () => (
 const projects = [
   {
     title: "INNARA",
-    image: "/SCENE 17.png",
+    image: "/Shene17.png",
     tags: ["V3 & 4 BHK Villas | 2 BHK Apartments", "Moira, Goa"],
     description:
       "Innara creates inspiring spaces — a mix of textures, warm tones, and craftsmanship for modern elegance.",

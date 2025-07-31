@@ -3,14 +3,14 @@ import { useNavigate } from 'react-router-dom';
 
 const slides = [
   {
-    image: '/SCENE 12.png',
+    image: '/pic8.png',
     title: 'CRAFTED FOR LIVING',
     description:
       'Innara creates deeply personal living spaces that inspire and endure—a seamless fusion of natural textures, warm tones, and thoughtful craftsmanship, designed to elevate the modern lifestyle with quiet elegance and meaning.',
     brand: 'INNARA',
   },
   {
-    image: '/SCENE 17.png',
+    image: '/SCENE 17.png', 
     title: 'Elegance in Every Corner ',
     description:
       'Tucked away in Morjim, La Oceia brings you villa living inspired by Goa’s raw beauty. With fluid architecture and a deep respect for nature, it’s a home that lets you live slow, live light, and live well.',
@@ -18,7 +18,7 @@ const slides = [
   },
   // {
   //   image: '/SCENE 24.png',
-  //   title: 'ELEGANCE REDEFINED',
+  //   title: 'ELEGANCE REDEFINED', 
   //   description:
   //     'Discover spaces that blend modern architecture with timeless elegance, offering a sanctuary for inspired living.',
   //   brand: 'SERENITY',

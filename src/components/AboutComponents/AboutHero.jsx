@@ -8,7 +8,7 @@ const AboutHero = () => {
       className="relative w-full h-[750px] pt-50 lg:pt-100 bg-cover bg-center bg-no-repeat flex items-center"
  
  
-      style={{ backgroundImage: "url('/SCENE 16.png')" }}
+      style={{ backgroundImage: "url('/SCENE 3.png')" }}
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/44 z-10" />

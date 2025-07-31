@@ -47,7 +47,7 @@ const JournalSection = () => {
           <h2 className="text-3xl sm:text-[56px] font-serif leading-[1.2] text-[#393F36] mb-12 w-full">
             BEYOND <br /> BLUEPRINTS.
           </h2>
-          {/* ✅ Updated View All Button */}
+        
           <button
             onClick={handleViewAllClick}
             className="flex items-center text-[#2E2E2E] gap-2 text-sm font-semibold uppercase tracking-wider hover:cursor-pointer"
@@ -56,7 +56,7 @@ const JournalSection = () => {
             <ChevronRight
               className="border border-gray-400 rounded-full bg-white"
               size={28}
-              strokeWidth={2.5}
+              strokeWidth={2.5} 
             />
           </button>
         </div>
@@ -64,7 +64,7 @@ const JournalSection = () => {
         {/* Right Cards Section */}
         <div className="w-full">
           {/* Mobile & Mid-size View: Horizontal Scroll */}
-          <div className="xl:hidden w-full overflow-x-auto">
+          <div className="lg:hidden w-full overflow-x-auto">
             <div className="flex gap-6 w-max px-2">
               {posts.map((post, index) => (
                 <div
@@ -94,11 +94,11 @@ const JournalSection = () => {
           </div>
 
           {/* Desktop Grid View */}
-          <div className="hidden xl:grid grid-cols-3 gap-10 mt-6">
+          <div className="hidden lg:grid grid-cols-3 gap-10 mt-6">
             {posts.map((post, index) => (
               <div
                 key={index}
-                className="bg-white overflow-hidden shadow-sm w-[300px] h-[450px] flex flex-col"
+                className="bg-white overflow-hidden shadow-sm w-[270px] h-[450px] flex flex-col"
               >
                 <img
                   src={post.image}

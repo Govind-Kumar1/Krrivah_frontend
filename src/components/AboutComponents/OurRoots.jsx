@@ -39,7 +39,7 @@ const OurRoots = () => {
             className="w-[275px] h-[294px] lg:w-full lg:h-full filter grayscale"
           />
           <img
-            src="/SCENE 8V1.png"
+            src="/pic1.png"
             alt="Interior"
             className="absolute object-cover top-[25%] -left-4 lg:-left-[20%] w-[127px] h-[167px] lg:w-[328px] lg:h-[430px] shadow-lg"
           />

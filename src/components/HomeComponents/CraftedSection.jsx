@@ -15,10 +15,9 @@ function useInterval(callback, delay) {
 }
 
 const images = [
-  { src: "/SCENE 2.png", alt: "Scene 2" },
-  { src: "/SCENE 3.png", alt: "Scene 3" },
+  { src: "/SCENE 16.png", alt: "Scene 2" },
   { src: "/SCENE 24.png", alt: "Scene 24" },
-  { src: "/SCENE 17.png", alt: "Scene 17" },
+  { src: "/pic9.png", alt: "Scene 17" },
   { src: "/SCENE 16.png", alt: "Scene 16" },
   { src: "/SCENE 4.png", alt: "Scene 4" },
 ];

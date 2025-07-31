@@ -41,7 +41,7 @@ const AboutSection = () => {
             className="lg:mr-60 lg:self-center self-start px-4 lg:px-6 py-2 bg-white rounded-full font-bold text-[12px] lg:text-[16px] shadow-sm hover:bg-[#393F36] hover:text-white transition hover:cursor-pointer"
             onClick={() => navigate("/about")}
           >
-            LEARN MORE
+            DISCOVER KRRIVAH
           </button>
         </div>
 
