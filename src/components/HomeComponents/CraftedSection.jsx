@@ -18,7 +18,6 @@ const images = [
   { src: "/SCENE 16.png", alt: "Scene 2" },
   { src: "/SCENE 24.png", alt: "Scene 24" },
   { src: "/pic9.png", alt: "Scene 17" },
-  { src: "/SCENE 16.png", alt: "Scene 16" },
   { src: "/SCENE 4.png", alt: "Scene 4" },
 ];
 
