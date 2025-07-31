@@ -23,7 +23,7 @@ const LocationIcon = () => (
 const projects = [
   {
     title: "INNARA",
-    image: "/SCENE 17.png",
+    image: "/Shene17.png",
     tags: ["V3 & 4 BHK Villas | 2 BHK Apartments", "Moira, Goa"],
     description:
       "Innara creates inspiring spaces — a mix of textures, warm tones, and craftsmanship for modern elegance.",
@@ -97,7 +97,7 @@ const ProjectDetails = () => {
              {/* Current Project (Center) */}
       <div className="w-full max-w-[460px] flex flex-col mx-auto">
         {/* Image with overlay */}
-        <div className="relative w-full h-[520px] md:h-[600px] px-4 md:px-0 overflow-hidden rounded-md">
+        <div className="relative w-full h-[520px] md:h-[600px] px-4 md:px-0 overflow-hidden ">
           <img
             src={projects[current].image}
             alt={projects[current].title}
