@@ -34,7 +34,7 @@ const HeroProject = () => {
 
       </div>
     </section>
-  );
+  ); 
 };
 
 export default HeroProject;

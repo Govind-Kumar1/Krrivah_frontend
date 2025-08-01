@@ -7,7 +7,7 @@ const VisionSection = () => {
     <section className="w-full bg-black text-white px-6 lg:px-10 py-10">
       {/* Top Image & Text */}
       <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 sm:gap-12">
-        {/* Image */} 
+        {/* Image */}
         <div className="w-full lg:w-2/3 flex justify-center">
           <img
             src="/SCENE 2.png" 
@@ -23,16 +23,13 @@ const VisionSection = () => {
           </p>
           <h2 className="relative text-2xl sm:text-3xl lg:text-4xl xl:text-6xl font-merchant text-[#E3E8E0] leading-tight mb-4 sm:mb-6">
  
-            IN HARMONY WITH <br />
-            FORM, LIGHT, AND <br />
-            LANDSCAPE.
+            DESIGN THAT   <br />
+            LIVES WITH <br />
+            THE LAND
           </h2>
  
           <p className="text-xs sm:text-sm text-gray-300 leading-relaxed mb-4 sm:mb-6 w-full max-w-[420px] break-words">
-            At the heart of every Krrivah project lies a design-first approach.
-            Our process blends architectural heritage with modern living, rooted
-            in sustainable materiality, refined aesthetics, and intentional
-            spaces.
+            Every Krrivah project begins with a sense of place. We work with light, form, and landscape to create spaces that feel inevitable, homes that feel like they were always meant to be there. Rooted in thoughtful design, sustainability and architectural heritage, our vision is to build with meaning and presence.
           </p>
           <button className="bg-white text-[#0B2204] text-xs sm:text-sm font-semibold px-4 sm:px-5 py-2 rounded-full transition hover:bg-[#393F36] hover:text-white hover:cursor-pointer">
  
@@ -68,6 +65,6 @@ const VisionSection = () => {
  
     </section>
   );
-};
+}; 
 
 export default VisionSection;

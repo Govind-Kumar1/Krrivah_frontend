@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 const categories = ["All", "Design", "Projects", "Trends", "Sustainability"];
 
 const POSTS_PER_PAGE = 8;
+
 const posts = [
   {
     id: 1,
@@ -123,7 +124,7 @@ export default function BlogGrid() {
 
   return (
     <div className="bg-[#f3f4f2] min-h-screen px-6 py-10 mt-12">
-      <div className="max-w-screen mx-auto">
+      <div className="max-w-screen-xl mx-auto">
         <div className="flex flex-wrap gap-4 mb-10">
           {categories.map((cat) => (
             <button
@@ -142,23 +143,22 @@ export default function BlogGrid() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {paginatedPosts.map((post) => (
-            <Link to="/blogdetails">
-              <div key={post.id} className="bg-white overflow-hidden shadow-sm">
+            <Link to="/blogdetails" key={post.id}>
+              <div className="bg-white overflow-hidden shadow-sm flex flex-col h-[360px]">
                 <img
                   src={post.image}
                   alt={post.title}
                   className="w-full h-48 object-cover"
                 />
-
-                <div className="p-4">
+                <div className="p-4 flex flex-col flex-1">
                   <p className="text-xs uppercase text-gray-900 font-medium mb-1">
                     {post.category}{" "}
                     <span className="text-gray-400">• {post.date}</span>
                   </p>
-                  <h3 className="font-semibold text-gray-900 text-base leading-snug mb-2">
+                  <h3 className="font-semibold text-gray-900 text-base leading-snug mb-2 line-clamp-2">
                     {post.title}
                   </h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">
+                  <p className="text-sm text-gray-600 leading-relaxed line-clamp-3">
                     {post.desc}
                   </p>
                 </div>
@@ -167,6 +167,7 @@ export default function BlogGrid() {
           ))}
         </div>
 
+        {/* Pagination */}
         <div className="mt-12 flex justify-center">
           <div className="bg-white shadow-sm flex items-center divide-x divide-gray-200 overflow-hidden">
             <button

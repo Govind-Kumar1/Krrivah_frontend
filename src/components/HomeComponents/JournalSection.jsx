@@ -1,8 +1,8 @@
 import React from "react";
 import { ChevronRight } from "lucide-react";
-import { useNavigate } from "react-router-dom"; // ✅ Step 1
+import { useNavigate } from "react-router-dom";
 
-const posts = [ 
+const posts = [
   {
     tag: "DESIGN",
     date: "JUNE 5, 2025",
@@ -14,9 +14,9 @@ const posts = [
   {
     tag: "PROJECTS",
     date: "JUNE 5, 2025",
-    title: "Inside Moira Villas: The Art of Material Harmony",
+    title: "Inside Moira Villas: Goa’s Quietly Sophisticated New Address",
     description:
-      "Explore the textures, tones, and finishes that make Moira Villas a study in material balance — from taupe floors to bronze fixtures.",
+      "A feature on the cultural and geographical charm of Moira, and why it’s becoming the preferred setting for high-design residences.",
     image: "/SCENE 12.png",
   },
   {
@@ -24,13 +24,13 @@ const posts = [
     date: "JUNE 5, 2025",
     title: "Beyond Square Feet: Rethinking Space in Urban Living",
     description:
-      "It's not about how much space you have — it's how meaningfully you design it. Here’s our take on intentional living in compact layo…",
+      "It's not about how much space you have — it's how  meaningfully you design it. Here’s our take on intentional living in compact layo…",
     image: "/SCENE 4.png",
   },
 ];
 
 const JournalSection = () => {
-  const navigate = useNavigate(); // ✅ Step 2
+  const navigate = useNavigate();
 
   const handleViewAllClick = () => {
     navigate("/projects");
@@ -38,16 +38,15 @@ const JournalSection = () => {
 
   return (
     <section className="bg-[#EAEDE5] w-full py-10 md:py-24 px-6 md:px-16">
-      <div className="flex flex-col xl:flex-row gap-10 xl:gap-20 items-start">
+      <div className="flex flex-col xl:flex-row gap-10 xl:gap-20 items-start max-w-[1400px] mx-auto">
         {/* Left Title */}
         <div className="flex-1">
           <p className="text-[18px] text-[#5F5F5F] font-medium mb-10 md:mb-40 uppercase tracking-widest">
-            Journal
+            Blog
           </p>
           <h2 className="text-3xl sm:text-[56px] font-serif leading-[1.2] text-[#393F36] mb-12 w-full">
-            BEYOND <br /> BLUEPRINTS.
+            ARCHITECTURE <br /> & INSIGHTS
           </h2>
-        
           <button
             onClick={handleViewAllClick}
             className="flex items-center text-[#2E2E2E] gap-2 text-sm font-semibold uppercase tracking-wider hover:cursor-pointer"
@@ -56,7 +55,7 @@ const JournalSection = () => {
             <ChevronRight
               className="border border-gray-400 rounded-full bg-white"
               size={28}
-              strokeWidth={2.5} 
+              strokeWidth={2.5}
             />
           </button>
         </div>
@@ -64,12 +63,12 @@ const JournalSection = () => {
         {/* Right Cards Section */}
         <div className="w-full">
           {/* Mobile & Mid-size View: Horizontal Scroll */}
-          <div className="lg:hidden w-full overflow-x-auto">
+          <div className="xl:hidden w-full overflow-x-auto">
             <div className="flex gap-6 w-max px-2">
               {posts.map((post, index) => (
                 <div
                   key={index}
-                  className="w-[300px] bg-white shadow-sm h-[420px] flex-shrink-0 overflow-hidden"
+                  className="min-w-[260px] max-w-[300px] w-full bg-white shadow-sm h-[420px] flex-shrink-0 overflow-hidden"
                 >
                   <img
                     src={post.image}
@@ -94,11 +93,11 @@ const JournalSection = () => {
           </div>
 
           {/* Desktop Grid View */}
-          <div className="hidden lg:grid grid-cols-3 gap-10 mt-6">
+          <div className="hidden xl:grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 mt-6">
             {posts.map((post, index) => (
               <div
                 key={index}
-                className="bg-white overflow-hidden shadow-sm w-[270px] h-[450px] flex flex-col"
+                className="bg-white overflow-hidden shadow-sm h-[450px] flex flex-col w-full"
               >
                 <img
                   src={post.image}

@@ -39,12 +39,12 @@ const GallerySection = () => {
         <img src="/pic11.png" alt="Gallery Image 11" className="col-start-9 row-start-5 col-span-4 row-span-2 md:col-start-9 md:row-start-5 md:col-span-4 md:row-span-2 w-full h-full object-cover" />
 
       </div>
-
+ 
       {/* Get In Touch Section Below */}
       <div className="flex flex-col items-center justify-center text-center py-16 px-4">
         <p className="max-w-[400px] text-gray-600 text-[16px] leading-relaxed">
-          Lorem ipsum dolor sit amet consectetur. Hac at nibh blandit quis pretium
-          habitant diam. Felis luctus lorem morbi vitae risus. Est tellus purus donec.
+           Our architecture listens to the land, to your lifestyle, to what truly lasts.
+
         </p>
         <button className="mt-8 px-6 py-3 border border-gray-200 rounded-full text-[#0B2204] font-semibold hover:bg-[#393F36] hover:text-white  transition">
           GET IN TOUCH

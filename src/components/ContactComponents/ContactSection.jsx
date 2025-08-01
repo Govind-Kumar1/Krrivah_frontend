@@ -48,11 +48,11 @@ export default function ContactSection() {
           <div className="flex items-start gap-4">
             <Mail className="w-6 h-6 text-[#D5C7B2] mt-1" />
             <div>
-              <h3 className="text-lg font-semibold text-[#FFFFFF]">Drop us a line</h3>
+              <h3 className="text-lg font-semibold text-[#FFFFFF]">Let’s make things happen.</h3>
               <p className="text-sm font-semibold text-[#FEFEFC] mb-1">
                 Reach out to our team for expert assistance.
               </p>
-              <p className="text-sm text-[#FFFFFF]">hello@krrivah.com</p>
+              <p className="text-sm text-[#FFFFFF]">krrivah@gmail.com</p>
             </div>
           </div>
 
@@ -64,12 +64,15 @@ export default function ContactSection() {
             <div>
               <h3 className="text-lg font-semibold text-[#FFFFFF]">Our Headquarters</h3>
               <p className="text-sm text-[#FEFEFC] mb-1 font-semibold">
-                Visit us at our headquarters—we’d love to meet you.
+               Goa Studio
               </p>
               <p className="text-sm leading-relaxed text-[#FFFFFF]">
-                #102, 1st Floor, Urban Heights,
+               
+               Near Leoney Resort, Vagator, Anjuna 403509, Goa
                 <br />
-                Koramangala 5th Block, Bengaluru - 560095
+                House No. 599, Ozran Beach Road, Small Vagator,
+
+
               </p>
             </div>
           </div>
@@ -80,11 +83,12 @@ export default function ContactSection() {
           <div className="flex items-start gap-4">
             <Phone className="w-6 h-6 text-[#D5C7B2] mt-1" />
             <div>
-              <h3 className="text-lg font-semibold text-[#FFFFFF]">Call our Experts</h3>
+              <h3 className="text-lg font-semibold text-[#FFFFFF]">Call us at</h3>
               <p className="text-sm font-normal mb-1 text-[#FFFFFF]">
                 Mon–Fri, 9:00 AM to 5:00 PM
               </p>
-              <p className="text-sm">+91 9876543210</p>
+              <p className="text-sm">+91-9987690860 | +91-8384082906
+</p>
             </div>
           </div>
         </div>

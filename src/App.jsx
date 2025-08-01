@@ -11,6 +11,8 @@ import Contacts from './pages/Contacts.jsx'
 import Project from './pages/Project.jsx'
 import BlogDetail from './pages/BlogDetails.jsx'
 import ProjectDetail from './pages/ProjectDetail.jsx'
+import OceiaSection from './components/ProjectDetailComponents/OceiaSection.jsx'
+import InnaraSection from './components/ProjectDetailComponents/InnaraSection.jsx'
 
 function App() {
 
@@ -27,8 +29,12 @@ function App() {
         <Route path ='/blogs' element={<Blogs/>} />
         <Route path='/contact' element={<Contacts/>} />
         <Route path='/projects' element={<Project/>} />
-        <Route path='/projectdetails' element={<ProjectDetail/>}   /> 
-        <Route path='/blogdetails' element ={<BlogDetail/>}/>
+       <Route path="/:projectSlug" element={<ProjectDetail />} />
+        <Route path='/blogdetails' element ={<BlogDetail/>}/> 
+         {/* <Route path="/blogdetails/:id" element={<Blogs />} /> */}
+        <Route path="/innara" element={<InnaraSection />} />
+
+        <Route path="/la-oceia" element={<OceiaSection />} />
       </Routes> 
       <Footer/>
     </Router>

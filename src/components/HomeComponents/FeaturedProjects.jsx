@@ -27,23 +27,18 @@ const projects = [
     tags: ["V3 & 4 BHK Villas | 2 BHK Apartments", "Moira, Goa"],
     description:
       "Innara creates inspiring spaces — a mix of textures, warm tones, and craftsmanship for modern elegance.",
+    route: "/innara", // 👈 Add this
   },
   {
     title: "LA OCEIA",
     image: "/SCENE 24.png",
-  
-    tags: ["5 BHK Villas", " Morjim, Goa"],
+    tags: ["5 BHK Villas", "Morjim, Goa"],
     description:
       "Krrivah blends modern architecture with nature, offering tranquil living in the heart of Goa.",
+    route: "/la-oceia", // 👈 Add this
   },
-  // {
-  //   title: "SERENITY",
-  //   image: "/SCENE 4.png",
-  //   tags: ["Apartments", "Anjuna, Goa"],
-  //   description:
-  //     "Serenity offers peaceful homes with contemporary design and lush surroundings.",
-  // },
 ];
+ 
 
 const FeaturedProjects = () => {
   const [current, setCurrent] = useState(0);
@@ -128,7 +123,8 @@ const FeaturedProjects = () => {
             </p>
             <button
               className="w-[280px] border border-gray-300 text-sm font-semibold text-[#0B2204] hover:bg-[#393F36] hover:text-white px-4 py-3 rounded-full transition hover:cursor-pointer"
-              onClick={() => navigate("/ProjectDetails")}
+              onClick={() => navigate(projects[current].route)}
+
             >
               LEARN MORE
             </button>

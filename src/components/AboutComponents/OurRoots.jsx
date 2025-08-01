@@ -12,19 +12,15 @@ const OurRoots = () => {
             Our Roots
           </p>
           <h2 className="text-[44px] lg:text-[58px] leading-tight font-serif text-[#2B2B2B] mb-12">
-            THE STORY <br /> BEHIND <br /> KRRIVAH
+            THE STORY<br /> BEHIND <br /> KRRIVAH
           </h2>
           <p className="text-sm font-semibold text-[#2B2B2B] mb-14">
-            Krrivah is more than a real estate venture — it’s a philosophy of
-            thoughtful living.
+            At Krrivah we believe in the philosophy of thoughtful living.
+
           </p>
           <p className="text-[15px] text-gray-700 leading-relaxed mb-3 max-w-lg">
-            Born from the desire to blend conscious design with purposeful
-            development, Krrivah crafts spaces that respect land, elevate
-            lifestyle, and build long-term value. With deep roots in South
-            India’s cultural and architectural heritage, we strive to create
-            environments where every brick tells a story — of craft, community,
-            and care.
+            Born from a desire to blend conscious design with purposeful development, Krrivah builds spaces that honour land, elevate lifestyle, and hold long-term value. Every element reflects intention, shaped with craft, care, and a sense of belonging.
+
           </p>
           <button className="px-5 py-2 mt-6 bg-white text-black text-sm font-semibold rounded-full hover:bg-[#393F36] hover:text-white hover:cursor-pointer transition">
             GET IN TOUCH
@@ -39,7 +35,7 @@ const OurRoots = () => {
             className="w-[275px] h-[294px] lg:w-full lg:h-full filter grayscale"
           />
           <img
-            src="/pic1.png"
+            src="/SCENE 8V1.png"
             alt="Interior"
             className="absolute object-cover top-[25%] -left-4 lg:-left-[20%] w-[127px] h-[167px] lg:w-[328px] lg:h-[430px] shadow-lg"
           />

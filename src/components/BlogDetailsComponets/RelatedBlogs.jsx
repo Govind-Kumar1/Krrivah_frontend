@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { ChevronRight } from "lucide-react";
 
+// In a real application, you might fetch this data from a CMS or API.
 const blogPosts = [
   {
     id: 1,
@@ -9,7 +10,8 @@ const blogPosts = [
     title: "Inside Moira Villas: The Art of Material Harmony",
     excerpt:
       "Explore the textures, tones, and finishes that make Moira Villas a study in material balance — from taupe floors to bronze fixtures.",
-    image: "SCENE 8.png",
+    // For images in the public folder, use absolute paths like "/SCENE 8.png"
+    image: "/SCENE 8.png",
   },
   {
     id: 2,
@@ -18,7 +20,7 @@ const blogPosts = [
     title: "Beyond Square Feet: Rethinking Space in Urban Homes",
     excerpt:
       "It’s not about how much space you have — it’s how meaningfully you design it. Here’s our take on intentional living in compact layouts.",
-    image: "pic3.png",
+    image: "/pic3.png",
   },
   {
     id: 3,
@@ -27,7 +29,7 @@ const blogPosts = [
     title: "The Future of Living: Compact, Flexible, Smart",
     excerpt:
       "From compact homes to flexible spaces — here are a few ideas shaping future homes.",
-    image: "image2.png",
+    image: "/image2.png",
   },
 ];
 
@@ -64,14 +66,15 @@ const RelatedBlogs = () => {
           <div className="flex gap-4 px-2 w-max">
             {blogPosts.map((post) => (
               <Link
-                to={`/blogdetails`}
+                // ✅ CHANGED HERE: Link now includes the post ID
+                to={`/blogdetails/${post.id}`}
                 key={post.id}
-                className="w-[300px] shrink-0 bg-white h-[450px]   shadow-sm transition duration-300 ease-in-out"
+                className="w-[300px] shrink-0 bg-white h-[450px] shadow-sm transition duration-300 ease-in-out"
               >
                 <img
                   src={post.image}
                   alt={post.title}
-                  className="w-full h-[220px] object-cover  "
+                  className="w-full h-[220px] object-cover"
                 />
                 <div className="p-5 flex flex-col">
                   <p className="text-xs font-semibold uppercase text-[#393F36] mb-2 tracking-wide">
@@ -93,7 +96,12 @@ const RelatedBlogs = () => {
         {/* Desktop View: Grid */}
         <div className="hidden sm:grid grid-cols-2 lg:grid-cols-3 gap-8">
           {blogPosts.map((post) => (
-            <Link to={`/blogdetails`} key={post.id} className="group">
+            <Link
+              // ✅ AND CHANGED HERE: Link also includes the post ID for desktop
+              to={`/blogs`}
+              key={post.id}
+              className="group"
+            >
               <img
                 src={post.image}
                 alt={post.title}
@@ -101,7 +109,7 @@ const RelatedBlogs = () => {
               />
               <p className="uppercase text-sm text-[#393F36] font-semibold tracking-wide">
                 {post.category}{" "}
-                <span className="text-[#828282]">• {post.date}</span>
+                <span className="text-[#828282]"> • {post.date}</span>
               </p>
               <h3 className="text-lg font-semibold text-[#2E2E2E] group-hover:underline mt-2">
                 {post.title}
@@ -110,7 +118,7 @@ const RelatedBlogs = () => {
             </Link>
           ))}
         </div>
-      </div>
+      </div> 
     </section>
   );
 };

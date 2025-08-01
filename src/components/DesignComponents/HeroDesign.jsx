@@ -10,18 +10,19 @@ const IntentionSection = () => {
         {/* Left: Main Heading */}
         <div className="w-full basis-1/2">
           <h2 className="font-merchant text-[70px] lg:text-[100px] leading-16 lg:leading-24 text-[#E3E8E0]">
-            DESIGNING WITH <br /> INTENTION
+           THOUGHTFUL BY  <br /> DESIGN
           </h2>
         </div>
 
         {/* Right: Subheading + Paragraph */}
         <div className="w-full basis-1/2 flex flex-col justify-between gap-4 lg:gap-7 pt-20 lg:pt-0 lg:py-6">
           <h3 className="font-serif text-xl sm:text-lg lg:text-3xl leading-snug tracking-normal">
-            EACH LINE IS A COMMITMENT<br />
-            TO BEAUTY AND PURPOSE.
+            FROM LAYOUT TO LIGHT, EVERY CHOICE <br />
+            IS MADE WITH LIVING IN MIND.
           </h3>
           <p className="text-sm sm:text-base lg:text-base text-[#D3D4C8] leading-relaxed max-w-sm">
-            Lorem ipsum dolor sit amet consectetur. Egestas purus lobortis nibh amet morbi sed at a urna.
+            Every plan begins with a question: how will this space feel, flow, and function over time?
+
           </p>
         </div>
 

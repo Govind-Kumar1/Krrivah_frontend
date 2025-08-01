@@ -54,7 +54,7 @@ const HomeHero = () => {
       {/* Desktop Number Indicators */}
       <div className="hidden lg:flex absolute z-20 top-1/2 -translate-y-1/2 left-6 text-[30px] tracking-wide leading-[3rem] flex-col gap-0">
         {slides.map((_, idx) => (
-          <div
+          <h2
             key={idx}
             className={
               idx === current
@@ -63,7 +63,7 @@ const HomeHero = () => {
             }
           >
             {(idx + 1).toString().padStart(2, '0')}
-          </div>
+          </h2>
         ))}
       </div>
 
@@ -110,16 +110,16 @@ const HomeHero = () => {
 
           <div className="flex space-x-2">
             {slides.map((_, idx) => (
-              <span
+              <h2
                 key={idx}
                 className={`w-6 h-6 flex items-center justify-center font-semibold rounded-full ${
                   idx === current
                     ? 'text-white text-2xl'
                     : 'text-white/70 text-base'
-                }`}
+                }`} 
               >
                 {(idx + 1).toString().padStart(2, '0')}
-              </span>
+              </h2>
             ))}
           </div>
         </div>
