@@ -9,7 +9,7 @@ const IntentionSection = () => {
 
         {/* Left: Main Heading */}
         <div className="w-full basis-1/2">
-          <h2 className="font-merchant text-[70px] lg:text-[100px] leading-16 lg:leading-24 text-[#E3E8E0]">
+          <h2 className="font-merchant text-[50px] lg:text-[100px] leading-16 lg:leading-24 text-[#E3E8E0]">
            THOUGHTFUL BY  <br /> DESIGN
           </h2>
         </div>
