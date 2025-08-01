@@ -7,9 +7,9 @@ export default function Hero() {
     <h1 className="text-5xl md:text-[80px] font-light leading-none tracking-tight text-[#0B2204]">
       OUR <span className="hidden sm:inline">JOURNAL</span>
     </h1>
-    <p className="sm:hidden text-5xl font-light leading-none tracking-tight text-[#0B2204]">
+    <h1 className="sm:hidden text-5xl font-light leading-none tracking-tight text-[#0B2204]">
       JOURNAL
-    </p> 
+    </h1> 
     <p className="max-w-md text-sm lg:text-base text-gray-800 font-normal leading-snug lg:mb-4">
       Whether you’re looking to collaborate, have an enquiry, or just want to say hello—we’d love to hear from you.
     </p>
