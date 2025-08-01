@@ -67,7 +67,7 @@ const RelatedBlogs = () => {
             {blogPosts.map((post) => (
               <Link
                 // ✅ CHANGED HERE: Link now includes the post ID
-                to={`/blogdetails/${post.id}`}
+                to={`/blogs`}
                 key={post.id}
                 className="w-[300px] shrink-0 bg-white h-[450px] shadow-sm transition duration-300 ease-in-out"
               >
